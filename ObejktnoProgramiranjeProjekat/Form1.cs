@@ -24,7 +24,7 @@ namespace ObejktnoProgramiranjeProjekat
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-              
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace ObejktnoProgramiranjeProjekat
             btnPodesavanja.Show();
             btnUputstvo.Show();
             lbxUputstvo.Hide();
-           
+
         }
 
         private void btnStart_Click(object sender, EventArgs e)
