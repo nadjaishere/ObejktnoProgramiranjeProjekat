@@ -10,28 +10,60 @@ using System.Windows.Forms;
 
 namespace ObejktnoProgramiranjeProjekat
 {
-    public partial class Form1 : Form
+    public partial class frmPocetniMeni : Form
     {
-        public Form1()
+        public frmPocetniMeni()
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
+            btnNazad.Hide();
+            lbxUputstvo.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+              
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            button2.Hide();
-            button3.Hide();
-            button4.Hide();
+            btnStart.Hide();
+            btnPodesavanja.Hide();
+            btnUputstvo.Hide();
 
+        }
+
+        private void btnUputstvo_Click(object sender, EventArgs e)
+        {
+            btnNazad.Show();
+            btnPodesavanja.Hide();
+            btnStart.Hide();
+            btnUputstvo.Hide();
+            lbxUputstvo.Show();
+            lbxUputstvo.Focus();
+        }
+
+        private void btnNazad_Click(object sender, EventArgs e)
+        {
+            btnNazad.Hide();
+            btnStart.Show();
+            btnPodesavanja.Show();
+            btnUputstvo.Show();
+            lbxUputstvo.Hide();
+           
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            frmIgra form = new frmIgra();
+            btnNazad.Show();
+            btnPodesavanja.Hide();
+            btnUputstvo.Hide();
+            btnStart.Hide();
+            form.Show();
+            this.Hide();
         }
     }
 }

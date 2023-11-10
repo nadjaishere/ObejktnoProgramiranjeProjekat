@@ -1,6 +1,6 @@
 ﻿namespace ObejktnoProgramiranjeProjekat
 {
-    partial class Form1
+    partial class frmPocetniMeni
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbxPozadina = new System.Windows.Forms.PictureBox();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnPodesavanja = new System.Windows.Forms.Button();
+            this.btnUputstvo = new System.Windows.Forms.Button();
+            this.btnNazad = new System.Windows.Forms.Button();
+            this.lbxUputstvo = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -45,81 +47,121 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pbxPozadina
             // 
-            this.pictureBox1.Image = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b8;
-            this.pictureBox1.Location = new System.Drawing.Point(-73, -91);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(851, 455);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pbxPozadina.Image = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b8;
+            this.pbxPozadina.Location = new System.Drawing.Point(-73, -91);
+            this.pbxPozadina.Name = "pbxPozadina";
+            this.pbxPozadina.Size = new System.Drawing.Size(851, 455);
+            this.pbxPozadina.TabIndex = 1;
+            this.pbxPozadina.TabStop = false;
             // 
-            // button2
+            // btnStart
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
-            this.button2.Location = new System.Drawing.Point(518, 126);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(580, 131);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "START";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStart.Font = new System.Drawing.Font("Agency FB", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.ForeColor = System.Drawing.Color.Transparent;
+            this.btnStart.Image = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.btnStart.Location = new System.Drawing.Point(518, 126);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(0);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(580, 131);
+            this.btnStart.TabIndex = 2;
+            this.btnStart.Text = "START";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // button3
+            // btnPodesavanja
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(633, 308);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(352, 88);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "PODESAVANJA";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnPodesavanja.BackColor = System.Drawing.Color.Transparent;
+            this.btnPodesavanja.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.btnPodesavanja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPodesavanja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPodesavanja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPodesavanja.Font = new System.Drawing.Font("Agency FB", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPodesavanja.ForeColor = System.Drawing.Color.Transparent;
+            this.btnPodesavanja.Location = new System.Drawing.Point(633, 308);
+            this.btnPodesavanja.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPodesavanja.Name = "btnPodesavanja";
+            this.btnPodesavanja.Size = new System.Drawing.Size(352, 88);
+            this.btnPodesavanja.TabIndex = 3;
+            this.btnPodesavanja.Text = "PODEŠAVANJA";
+            this.btnPodesavanja.UseVisualStyleBackColor = false;
+            this.btnPodesavanja.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnUputstvo
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.ForeColor = System.Drawing.Color.Transparent;
-            this.button4.Location = new System.Drawing.Point(633, 419);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(352, 88);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "UPUTSTVA";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnUputstvo.BackColor = System.Drawing.Color.Transparent;
+            this.btnUputstvo.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.btnUputstvo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUputstvo.Font = new System.Drawing.Font("Agency FB", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUputstvo.ForeColor = System.Drawing.Color.Transparent;
+            this.btnUputstvo.Location = new System.Drawing.Point(633, 419);
+            this.btnUputstvo.Name = "btnUputstvo";
+            this.btnUputstvo.Size = new System.Drawing.Size(352, 88);
+            this.btnUputstvo.TabIndex = 4;
+            this.btnUputstvo.Text = "UPUTSTVA";
+            this.btnUputstvo.UseVisualStyleBackColor = false;
+            this.btnUputstvo.Click += new System.EventHandler(this.btnUputstvo_Click);
             // 
-            // Form1
+            // btnNazad
+            // 
+            this.btnNazad.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNazad.ForeColor = System.Drawing.Color.Black;
+            this.btnNazad.Location = new System.Drawing.Point(1023, 29);
+            this.btnNazad.Name = "btnNazad";
+            this.btnNazad.Size = new System.Drawing.Size(75, 75);
+            this.btnNazad.TabIndex = 5;
+            this.btnNazad.Text = "<";
+            this.btnNazad.UseVisualStyleBackColor = true;
+            this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
+            // 
+            // lbxUputstvo
+            // 
+            this.lbxUputstvo.FormattingEnabled = true;
+            this.lbxUputstvo.ItemHeight = 16;
+            this.lbxUputstvo.Items.AddRange(new object[] {
+            "UPUTSTVO",
+            "",
+            "Dva izabrana igrača se nalaze u svemiru na određenoj razdaljini od nekoliko svetl" +
+                "osnih godina.",
+            "Da bi zaštitili svoje planete koje su u dugogodišnjem ratu, vanzemaljci pucaju je" +
+                "dni na druge.",
+            "Da ne bi pucali rafale jedni po drugima, imaju po 5 metkova na svakih 20 sekundi." +
+                "",
+            "Kada jedan svemirski brod pogodi drugi, drugom se smanjuje broj poena (health) ko" +
+                "je poseduje.",
+            "Igra se završava onda kada jednom igraču ponestanu svi poeni, to jest ostane na n" +
+                "uli."});
+            this.lbxUputstvo.Location = new System.Drawing.Point(531, 221);
+            this.lbxUputstvo.Name = "lbxUputstvo";
+            this.lbxUputstvo.Size = new System.Drawing.Size(600, 276);
+            this.lbxUputstvo.TabIndex = 6;
+            // 
+            // frmPocetniMeni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.ClientSize = new System.Drawing.Size(1180, 674);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbxUputstvo);
+            this.Controls.Add(this.btnNazad);
+            this.Controls.Add(this.btnUputstvo);
+            this.Controls.Add(this.btnPodesavanja);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.pbxPozadina);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.IndianRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximumSize = new System.Drawing.Size(1202, 725);
-            this.Name = "Form1";
+            this.Name = "frmPocetniMeni";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -127,10 +169,12 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pbxPozadina;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnPodesavanja;
+        private System.Windows.Forms.Button btnUputstvo;
+        private System.Windows.Forms.Button btnNazad;
+        private System.Windows.Forms.ListBox lbxUputstvo;
     }
 }
 
