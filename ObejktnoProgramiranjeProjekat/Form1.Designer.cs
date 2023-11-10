@@ -35,7 +35,15 @@
             this.btnUputstvo = new System.Windows.Forms.Button();
             this.btnNazad = new System.Windows.Forms.Button();
             this.lbxUputstvo = new System.Windows.Forms.ListBox();
+            this.pBx1 = new System.Windows.Forms.PictureBox();
+            this.pBx2 = new System.Windows.Forms.PictureBox();
+            this.pBx3 = new System.Windows.Forms.PictureBox();
+            this.pBx4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBx1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBx2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBx3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBx4)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -137,10 +145,42 @@
                 "je poseduje.",
             "Igra se završava onda kada jednom igraču ponestanu svi poeni, to jest ostane na n" +
                 "uli."});
-            this.lbxUputstvo.Location = new System.Drawing.Point(531, 221);
+            this.lbxUputstvo.Location = new System.Drawing.Point(12, 231);
             this.lbxUputstvo.Name = "lbxUputstvo";
             this.lbxUputstvo.Size = new System.Drawing.Size(600, 276);
             this.lbxUputstvo.TabIndex = 6;
+            // 
+            // pBx1
+            // 
+            this.pBx1.Location = new System.Drawing.Point(263, 291);
+            this.pBx1.Name = "pBx1";
+            this.pBx1.Size = new System.Drawing.Size(124, 158);
+            this.pBx1.TabIndex = 7;
+            this.pBx1.TabStop = false;
+            // 
+            // pBx2
+            // 
+            this.pBx2.Location = new System.Drawing.Point(441, 291);
+            this.pBx2.Name = "pBx2";
+            this.pBx2.Size = new System.Drawing.Size(124, 158);
+            this.pBx2.TabIndex = 8;
+            this.pBx2.TabStop = false;
+            // 
+            // pBx3
+            // 
+            this.pBx3.Location = new System.Drawing.Point(816, 291);
+            this.pBx3.Name = "pBx3";
+            this.pBx3.Size = new System.Drawing.Size(124, 158);
+            this.pBx3.TabIndex = 9;
+            this.pBx3.TabStop = false;
+            // 
+            // pBx4
+            // 
+            this.pBx4.Location = new System.Drawing.Point(633, 291);
+            this.pBx4.Name = "pBx4";
+            this.pBx4.Size = new System.Drawing.Size(124, 158);
+            this.pBx4.TabIndex = 10;
+            this.pBx4.TabStop = false;
             // 
             // frmPocetniMeni
             // 
@@ -148,6 +188,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.ClientSize = new System.Drawing.Size(1180, 674);
+            this.Controls.Add(this.pBx4);
+            this.Controls.Add(this.pBx3);
+            this.Controls.Add(this.pBx2);
+            this.Controls.Add(this.pBx1);
             this.Controls.Add(this.lbxUputstvo);
             this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.btnUputstvo);
@@ -162,6 +206,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBx1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBx2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBx3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBx4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -175,6 +223,10 @@
         private System.Windows.Forms.Button btnUputstvo;
         private System.Windows.Forms.Button btnNazad;
         private System.Windows.Forms.ListBox lbxUputstvo;
+        private System.Windows.Forms.PictureBox pBx1;
+        private System.Windows.Forms.PictureBox pBx2;
+        private System.Windows.Forms.PictureBox pBx3;
+        private System.Windows.Forms.PictureBox pBx4;
     }
 }
 

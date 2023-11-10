@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace ObejktnoProgramiranjeProjekat
 {
+
     public partial class frmPocetniMeni : Form
     {
         public frmPocetniMeni()
@@ -32,6 +33,10 @@ namespace ObejktnoProgramiranjeProjekat
             btnStart.Hide();
             btnPodesavanja.Hide();
             btnUputstvo.Hide();
+            pBx1.Show();    
+            pBx2.Show();
+            pBx3.Show();
+            pBx4.Show();
 
         }
 
