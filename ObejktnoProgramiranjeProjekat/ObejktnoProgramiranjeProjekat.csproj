@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9a2f1c6f026149450365f8a8d06ab9b8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9a2f1c6f026149450365f8a8d06ab9b81.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alienpls3 Dance Sticker - Alienpls3 Alienpls Dance - Discover &amp; Share GIFs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minecraft Bee GIF - Minecraft Bee Happy - Discover &amp; Share GIFs.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
