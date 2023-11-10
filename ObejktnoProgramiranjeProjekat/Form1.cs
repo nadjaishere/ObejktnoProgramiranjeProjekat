@@ -52,7 +52,6 @@ namespace ObejktnoProgramiranjeProjekat
             btnPodesavanja.Show();
             btnUputstvo.Show();
             lbxUputstvo.Hide();
-           
         }
 
         private void btnStart_Click(object sender, EventArgs e)
