@@ -53,6 +53,7 @@ namespace ObejktnoProgramiranjeProjekat
             chcBx3.Show();
             chcBx4.Show();
             btnNazad.Show();
+            btnIzlaz.Hide();
         }
 
         private void btnUputstvo_Click(object sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace ObejktnoProgramiranjeProjekat
             btnUputstvo.Hide();
             lbxUputstvo.Show();
             lbxUputstvo.Focus();
+            btnIzlaz.Hide();
         }
 
         private void btnNazad_Click(object sender, EventArgs e)
@@ -82,6 +84,7 @@ namespace ObejktnoProgramiranjeProjekat
             chcBx2.Hide();
             chcBx3.Hide();
             chcBx4.Hide();
+            btnIzlaz.Show();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -91,7 +94,9 @@ namespace ObejktnoProgramiranjeProjekat
             btnPodesavanja.Hide();
             btnUputstvo.Hide();
             btnStart.Hide();
+            btnIzlaz.Hide();
             form.Show();
+            form.Focus();
             this.Hide();
         }
 
@@ -145,6 +150,11 @@ namespace ObejktnoProgramiranjeProjekat
             {
                 chcBx2.Enabled = true;
             }
+        }
+
+        private void btnIzlaz_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

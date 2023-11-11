@@ -12,21 +12,97 @@ namespace ObejktnoProgramiranjeProjekat
 {
     public partial class frmIgra : Form
     {
+        bool pomeriGore1, pomeriDole1, pomeriGore2, pomeriDole2, metak1, metak2;
+        int brzinaIgraca = 10;
+        int brzinaMetaka = 30;
         public frmIgra()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
-            frmPocetniMeni frm=new frmPocetniMeni();
+            frmPocetniMeni frm = new frmPocetniMeni();
             frm.Show();
             this.Hide();
         }
 
         private void frmIgra_Load(object sender, EventArgs e)
         {
+            pbxMetak2.Hide();
+            pbxMetak1.Hide();
+        }
+
+        private void frmIgra_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up) pomeriGore2 = true;
+            if (e.KeyCode == Keys.Down) pomeriDole2 = true;
+            if (e.KeyCode == Keys.W) pomeriGore1 = true;
+            if (e.KeyCode == Keys.S) pomeriDole1 = true;
+            if (e.KeyCode == Keys.Space) metak1 = true;
+            if (e.KeyCode == Keys.Enter) metak2 = true;
+
+        }
+
+        private void pbxIgrac1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+
+        }
+
+        private void pbxMetak2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tmrMetkovi_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNazad2_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            e.IsInputKey = true;
+        }
+
+        private void tmrNmp_Tick(object sender, EventArgs e)
+        {
+            if (pomeriGore1 && pbxIgrac1.Top > 0) pbxIgrac1.Top -= brzinaIgraca;
+            if (pomeriDole1 && pbxIgrac1.Top < 500) pbxIgrac1.Top += brzinaIgraca;
+            if (pomeriGore2 && pbxIgrac2.Top > 0) pbxIgrac2.Top -= brzinaIgraca;
+            if (pomeriDole2 && pbxIgrac2.Top < 500) pbxIgrac2.Top += brzinaIgraca;
+            if (metak1 && pbxMetak1.Left < 975)
+            {
+                pbxMetak1.Show();
+                pbxMetak1.Left += brzinaMetaka;
+            }
+            if (metak2)
+            {
+                pbxMetak2.Show();
+                pbxMetak2.Left -= brzinaMetaka;
+                if (pbxMetak2.Left > 70) metak2 = true;
+                else metak2 = false;
+            }
+        }
+
+        private void pbxIgrac2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pbxIgrac2_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
          
+        }
+
+        private void frmIgra_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up) pomeriGore2 = false;
+            if (e.KeyCode == Keys.Down) pomeriDole2 = false;
+            if (e.KeyCode == Keys.W) pomeriGore1 = false;
+            if (e.KeyCode == Keys.S) pomeriDole1 = false;
+            if (e.KeyCode == Keys.Space) metak1 = false;
+            if (e.KeyCode == Keys.Enter) metak2 = false;    
         }
     }
 }

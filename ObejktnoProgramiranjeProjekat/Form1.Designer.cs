@@ -45,6 +45,7 @@
             this.chcBx2 = new System.Windows.Forms.CheckBox();
             this.chcBx3 = new System.Windows.Forms.CheckBox();
             this.chcBx4 = new System.Windows.Forms.CheckBox();
+            this.btnIzlaz = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBx1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBx2)).BeginInit();
@@ -258,12 +259,26 @@
             this.chcBx4.UseVisualStyleBackColor = false;
             this.chcBx4.CheckedChanged += new System.EventHandler(this.chcBx4_CheckedChanged);
             // 
+            // btnIzlaz
+            // 
+            this.btnIzlaz.BackColor = System.Drawing.Color.Red;
+            this.btnIzlaz.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIzlaz.ForeColor = System.Drawing.Color.White;
+            this.btnIzlaz.Location = new System.Drawing.Point(1023, 29);
+            this.btnIzlaz.Name = "btnIzlaz";
+            this.btnIzlaz.Size = new System.Drawing.Size(75, 75);
+            this.btnIzlaz.TabIndex = 17;
+            this.btnIzlaz.Text = "X";
+            this.btnIzlaz.UseVisualStyleBackColor = false;
+            this.btnIzlaz.Click += new System.EventHandler(this.btnIzlaz_Click);
+            // 
             // frmPocetniMeni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.ClientSize = new System.Drawing.Size(1180, 674);
+            this.Controls.Add(this.btnIzlaz);
             this.Controls.Add(this.chcBx4);
             this.Controls.Add(this.chcBx3);
             this.Controls.Add(this.chcBx2);
@@ -316,6 +331,7 @@
         private System.Windows.Forms.CheckBox chcBx2;
         private System.Windows.Forms.CheckBox chcBx3;
         private System.Windows.Forms.CheckBox chcBx4;
+        private System.Windows.Forms.Button btnIzlaz;
     }
 }
 
