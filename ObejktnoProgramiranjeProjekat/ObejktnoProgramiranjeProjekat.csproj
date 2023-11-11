@@ -101,5 +101,8 @@
   <ItemGroup>
     <None Include="Resources\Minecraft Bee GIF - Minecraft Bee Happy - Discover &amp; Share GIFs.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viber_image_2023-11-10_16-54-38-469.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

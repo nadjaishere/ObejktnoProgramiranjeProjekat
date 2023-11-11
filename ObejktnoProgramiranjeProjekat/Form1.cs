@@ -21,13 +21,22 @@ namespace ObejktnoProgramiranjeProjekat
         {
             btnNazad.Hide();
             lbxUputstvo.Hide();
+            pBx1.Hide();
+            pBx2.Hide();
+            pBx3.Hide();
+            pBx4.Hide();
+            lblIgrac1.Hide();
+            lbl2.Hide();
+            chcBx1.Hide();
+            chcBx2.Hide();
+            chcBx3.Hide();
+            chcBx4.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             btnStart.Hide();
@@ -37,7 +46,13 @@ namespace ObejktnoProgramiranjeProjekat
             pBx2.Show();
             pBx3.Show();
             pBx4.Show();
-
+            lblIgrac1.Show();
+            lbl2.Show();
+            chcBx1.Show();
+            chcBx2.Show();
+            chcBx3.Show();
+            chcBx4.Show();
+            btnNazad.Show();
         }
 
         private void btnUputstvo_Click(object sender, EventArgs e)
@@ -57,6 +72,16 @@ namespace ObejktnoProgramiranjeProjekat
             btnPodesavanja.Show();
             btnUputstvo.Show();
             lbxUputstvo.Hide();
+            pBx1.Hide();
+            pBx2.Hide();
+            pBx3.Hide();
+            pBx4.Hide();
+            lblIgrac1.Hide();
+            lbl2.Hide();
+            chcBx1.Hide();
+            chcBx2.Hide();
+            chcBx3.Hide();
+            chcBx4.Hide();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -68,6 +93,58 @@ namespace ObejktnoProgramiranjeProjekat
             btnStart.Hide();
             form.Show();
             this.Hide();
+        }
+
+        private void chcBx1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chcBx1.Checked)
+            {
+                chcBx3.Enabled = false;
+                chcBx2.Checked= false;
+            }
+            else
+            {
+                chcBx3.Enabled = true;
+            }
+        }
+
+        private void chcBx2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chcBx2.Checked)
+            {
+                chcBx4.Enabled = false;
+                chcBx1.Checked= false;
+            }
+            else
+            {
+                chcBx4.Enabled = true;
+            }
+        }
+
+        private void chcBx3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chcBx3.Checked)
+            {
+                chcBx1.Enabled = false;
+                chcBx4.Checked= false;
+            }
+            else
+            {
+                chcBx1.Enabled = true;
+            }
+        }
+
+        private void chcBx4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chcBx4.Checked)
+            {
+                chcBx2.Enabled = false;
+                chcBx3.Checked= false;
+            }
+            else
+            {
+                chcBx2.Enabled = true;
+            }
         }
     }
 }

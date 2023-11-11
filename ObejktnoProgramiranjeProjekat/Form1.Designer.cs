@@ -39,6 +39,12 @@
             this.pBx2 = new System.Windows.Forms.PictureBox();
             this.pBx3 = new System.Windows.Forms.PictureBox();
             this.pBx4 = new System.Windows.Forms.PictureBox();
+            this.lblIgrac1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.chcBx1 = new System.Windows.Forms.CheckBox();
+            this.chcBx2 = new System.Windows.Forms.CheckBox();
+            this.chcBx3 = new System.Windows.Forms.CheckBox();
+            this.chcBx4 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBx1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBx2)).BeginInit();
@@ -152,6 +158,7 @@
             // 
             // pBx1
             // 
+            this.pBx1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.pBx1.Location = new System.Drawing.Point(263, 291);
             this.pBx1.Name = "pBx1";
             this.pBx1.Size = new System.Drawing.Size(124, 158);
@@ -160,6 +167,7 @@
             // 
             // pBx2
             // 
+            this.pBx2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.pBx2.Location = new System.Drawing.Point(441, 291);
             this.pBx2.Name = "pBx2";
             this.pBx2.Size = new System.Drawing.Size(124, 158);
@@ -168,6 +176,7 @@
             // 
             // pBx3
             // 
+            this.pBx3.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.pBx3.Location = new System.Drawing.Point(816, 291);
             this.pBx3.Name = "pBx3";
             this.pBx3.Size = new System.Drawing.Size(124, 158);
@@ -176,11 +185,78 @@
             // 
             // pBx4
             // 
+            this.pBx4.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.pBx4.Location = new System.Drawing.Point(633, 291);
             this.pBx4.Name = "pBx4";
             this.pBx4.Size = new System.Drawing.Size(124, 158);
             this.pBx4.TabIndex = 10;
             this.pBx4.TabStop = false;
+            // 
+            // lblIgrac1
+            // 
+            this.lblIgrac1.AutoSize = true;
+            this.lblIgrac1.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIgrac1.ForeColor = System.Drawing.Color.Black;
+            this.lblIgrac1.Location = new System.Drawing.Point(360, 216);
+            this.lblIgrac1.Name = "lblIgrac1";
+            this.lblIgrac1.Size = new System.Drawing.Size(95, 39);
+            this.lblIgrac1.TabIndex = 11;
+            this.lblIgrac1.Text = "IGRAC 1";
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.Black;
+            this.lbl2.Location = new System.Drawing.Point(735, 216);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(104, 39);
+            this.lbl2.TabIndex = 12;
+            this.lbl2.Text = "IGRAC 2";
+            // 
+            // chcBx1
+            // 
+            this.chcBx1.AutoSize = true;
+            this.chcBx1.BackColor = System.Drawing.Color.Transparent;
+            this.chcBx1.Location = new System.Drawing.Point(263, 291);
+            this.chcBx1.Name = "chcBx1";
+            this.chcBx1.Size = new System.Drawing.Size(18, 17);
+            this.chcBx1.TabIndex = 13;
+            this.chcBx1.UseVisualStyleBackColor = false;
+            this.chcBx1.CheckedChanged += new System.EventHandler(this.chcBx1_CheckedChanged);
+            // 
+            // chcBx2
+            // 
+            this.chcBx2.AutoSize = true;
+            this.chcBx2.BackColor = System.Drawing.Color.Transparent;
+            this.chcBx2.Location = new System.Drawing.Point(441, 291);
+            this.chcBx2.Name = "chcBx2";
+            this.chcBx2.Size = new System.Drawing.Size(18, 17);
+            this.chcBx2.TabIndex = 14;
+            this.chcBx2.UseVisualStyleBackColor = false;
+            this.chcBx2.CheckedChanged += new System.EventHandler(this.chcBx2_CheckedChanged);
+            // 
+            // chcBx3
+            // 
+            this.chcBx3.AutoSize = true;
+            this.chcBx3.BackColor = System.Drawing.Color.Transparent;
+            this.chcBx3.Location = new System.Drawing.Point(633, 291);
+            this.chcBx3.Name = "chcBx3";
+            this.chcBx3.Size = new System.Drawing.Size(18, 17);
+            this.chcBx3.TabIndex = 15;
+            this.chcBx3.UseVisualStyleBackColor = false;
+            this.chcBx3.CheckedChanged += new System.EventHandler(this.chcBx3_CheckedChanged);
+            // 
+            // chcBx4
+            // 
+            this.chcBx4.AutoSize = true;
+            this.chcBx4.BackColor = System.Drawing.Color.Transparent;
+            this.chcBx4.Location = new System.Drawing.Point(816, 291);
+            this.chcBx4.Name = "chcBx4";
+            this.chcBx4.Size = new System.Drawing.Size(18, 17);
+            this.chcBx4.TabIndex = 16;
+            this.chcBx4.UseVisualStyleBackColor = false;
+            this.chcBx4.CheckedChanged += new System.EventHandler(this.chcBx4_CheckedChanged);
             // 
             // frmPocetniMeni
             // 
@@ -188,6 +264,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.ClientSize = new System.Drawing.Size(1180, 674);
+            this.Controls.Add(this.chcBx4);
+            this.Controls.Add(this.chcBx3);
+            this.Controls.Add(this.chcBx2);
+            this.Controls.Add(this.chcBx1);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lblIgrac1);
             this.Controls.Add(this.pBx4);
             this.Controls.Add(this.pBx3);
             this.Controls.Add(this.pBx2);
@@ -211,6 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pBx3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBx4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -227,6 +310,12 @@
         private System.Windows.Forms.PictureBox pBx2;
         private System.Windows.Forms.PictureBox pBx3;
         private System.Windows.Forms.PictureBox pBx4;
+        private System.Windows.Forms.Label lblIgrac1;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.CheckBox chcBx1;
+        private System.Windows.Forms.CheckBox chcBx2;
+        private System.Windows.Forms.CheckBox chcBx3;
+        private System.Windows.Forms.CheckBox chcBx4;
     }
 }
 

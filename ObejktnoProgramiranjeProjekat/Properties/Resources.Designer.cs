@@ -99,5 +99,15 @@ namespace ObejktnoProgramiranjeProjekat.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap viber_image_2023_11_10_16_54_38_469 {
+            get {
+                object obj = ResourceManager.GetObject("viber_image_2023-11-10_16-54-38-469", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

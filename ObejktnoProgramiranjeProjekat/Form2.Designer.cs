@@ -45,8 +45,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 678);
             this.Controls.Add(this.button1);
+            this.MinimumSize = new System.Drawing.Size(1202, 725);
             this.Name = "frmIgra";
             this.Load += new System.EventHandler(this.frmIgra_Load);
             this.ResumeLayout(false);
