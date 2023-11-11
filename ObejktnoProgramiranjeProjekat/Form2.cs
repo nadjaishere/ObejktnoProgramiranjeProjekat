@@ -19,19 +19,14 @@ namespace ObejktnoProgramiranjeProjekat
         
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            frmPocetniMeni frm=new frmPocetniMeni();
+            frm.Show();
+            this.Hide();
         }
 
         private void frmIgra_Load(object sender, EventArgs e)
         {
          
-        }
-
-        private void btnNazad_Click(object sender, EventArgs e)
-        {
-            frmPocetniMeni frm = new frmPocetniMeni();
-            frm.Show();
-            this.Hide();
         }
     }
 }

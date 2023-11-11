@@ -63,6 +63,7 @@
             // 
             // pbxPozadina
             // 
+            this.pbxPozadina.Image = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b8;
             this.pbxPozadina.Location = new System.Drawing.Point(-73, -91);
             this.pbxPozadina.Name = "pbxPozadina";
             this.pbxPozadina.Size = new System.Drawing.Size(851, 455);
@@ -72,12 +73,13 @@
             // btnStart
             // 
             this.btnStart.BackColor = System.Drawing.Color.Transparent;
-            
+            this.btnStart.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStart.Font = new System.Drawing.Font("Agency FB", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.Transparent;
+            this.btnStart.Image = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.btnStart.Location = new System.Drawing.Point(518, 126);
             this.btnStart.Margin = new System.Windows.Forms.Padding(0);
             this.btnStart.Name = "btnStart";
@@ -90,7 +92,7 @@
             // btnPodesavanja
             // 
             this.btnPodesavanja.BackColor = System.Drawing.Color.Transparent;
-            
+            this.btnPodesavanja.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.btnPodesavanja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnPodesavanja.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPodesavanja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -108,7 +110,7 @@
             // btnUputstvo
             // 
             this.btnUputstvo.BackColor = System.Drawing.Color.Transparent;
-            
+            this.btnUputstvo.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.btnUputstvo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUputstvo.Font = new System.Drawing.Font("Agency FB", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUputstvo.ForeColor = System.Drawing.Color.Transparent;
@@ -156,6 +158,7 @@
             // 
             // pBx1
             // 
+            this.pBx1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.pBx1.Location = new System.Drawing.Point(263, 291);
             this.pBx1.Name = "pBx1";
             this.pBx1.Size = new System.Drawing.Size(124, 158);
@@ -164,6 +167,7 @@
             // 
             // pBx2
             // 
+            this.pBx2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.pBx2.Location = new System.Drawing.Point(441, 291);
             this.pBx2.Name = "pBx2";
             this.pBx2.Size = new System.Drawing.Size(124, 158);
@@ -172,6 +176,7 @@
             // 
             // pBx3
             // 
+            this.pBx3.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.pBx3.Location = new System.Drawing.Point(816, 291);
             this.pBx3.Name = "pBx3";
             this.pBx3.Size = new System.Drawing.Size(124, 158);
@@ -180,6 +185,7 @@
             // 
             // pBx4
             // 
+            this.pBx4.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.pBx4.Location = new System.Drawing.Point(633, 291);
             this.pBx4.Name = "pBx4";
             this.pBx4.Size = new System.Drawing.Size(124, 158);
@@ -256,6 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.ClientSize = new System.Drawing.Size(1180, 674);
             this.Controls.Add(this.chcBx4);
             this.Controls.Add(this.chcBx3);
