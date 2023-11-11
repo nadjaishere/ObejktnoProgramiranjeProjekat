@@ -68,14 +68,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,15 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\9a2f1c6f026149450365f8a8d06ab9b81.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alienpls3 Dance Sticker - Alienpls3 Alienpls Dance - Discover &amp; Share GIFs.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Minecraft Bee GIF - Minecraft Bee Happy - Discover &amp; Share GIFs.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\viber_image_2023-11-10_16-54-38-469.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

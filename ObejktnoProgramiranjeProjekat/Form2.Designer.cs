@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnNazad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnNazad
             // 
-            this.button1.Location = new System.Drawing.Point(219, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(267, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnNazad.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNazad.ForeColor = System.Drawing.Color.Black;
+            this.btnNazad.Location = new System.Drawing.Point(24, 12);
+            this.btnNazad.Name = "btnNazad";
+            this.btnNazad.Size = new System.Drawing.Size(75, 75);
+            this.btnNazad.TabIndex = 6;
+            this.btnNazad.Text = "<";
+            this.btnNazad.UseVisualStyleBackColor = true;
+            this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
             // 
             // frmIgra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1184, 678);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnNazad);
             this.MinimumSize = new System.Drawing.Size(1202, 725);
             this.Name = "frmIgra";
             this.Load += new System.EventHandler(this.frmIgra_Load);
@@ -55,7 +58,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNazad;
     }
 }
