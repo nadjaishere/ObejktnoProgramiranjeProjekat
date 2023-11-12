@@ -19,6 +19,7 @@ namespace ObejktnoProgramiranjeProjekat
         int brojac_metaka1 = 5;
         int brojac_metaka2 = 5;
         int broj_zivota1=5,broj_zivota2=5;
+        bool poeni1, poeni2;
         Random rand = new Random(); 
         public frmIgra()
         {
@@ -56,29 +57,22 @@ namespace ObejktnoProgramiranjeProjekat
             if (e.KeyCode == Keys.S) pomeriDole1 = true;
             if (e.KeyCode == Keys.A)
             {
+                pbxMetak1.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                pbxMetak1.Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
                 if (brojac_metaka1 > 0)
                 {
-                    pbxMetak1.Top = pbxIgrac1.Top;
-                    pbxMetak1.Left= pbxIgrac1.Left;
                     metak1 = true;
-                    pbxMetak1.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
                     brojac_metaka1--;
-                   // MessageBox.Show(Convert.ToString(brojac_metaka1));
                 }
-                
-
-
             }
             if (e.KeyCode == Keys.Enter)
             {
-                if (brojac_metaka2>0)
+                pbxMetak2.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                pbxMetak2.Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
+                if (brojac_metaka2 > 0)
                 {
-                    pbxMetak2.Top = pbxIgrac2.Top;
-                    pbxMetak2.Left = pbxIgrac2.Left;
                     metak2 = true;
-                    pbxMetak2.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
                     brojac_metaka2--;
-                    //MessageBox.Show(Convert.ToString(brojac_metaka2));
                 }
             }
         }
@@ -91,6 +85,11 @@ namespace ObejktnoProgramiranjeProjekat
         private void pbxMetak2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void tmrMetkovi_Tick(object sender, EventArgs e)
@@ -108,34 +107,42 @@ namespace ObejktnoProgramiranjeProjekat
             if (pomeriGore1 && pbxIgrac1.Top > 0)
             {
                 pbxIgrac1.Top -= brzinaIgraca;
-                pbxMetak1.Top -= brzinaIgraca;
             }
             if (pomeriDole1 && pbxIgrac1.Top < 500)
             {
                 pbxIgrac1.Top += brzinaIgraca;
-                pbxMetak1.Top += brzinaIgraca;
             }
-            if (pomeriGore2 && pbxIgrac2.Top > 0)
+            if (pomeriGore2 && pbxIgrac2.Top > 0 && !metak2)
             {
                 pbxIgrac2.Top -= brzinaIgraca;
-                pbxMetak2.Top -= brzinaIgraca;  
             }
-            if (pomeriDole2 && pbxIgrac2.Top < 500)
+            if (pomeriDole2 && pbxIgrac2.Top < 500 && !metak2)
             {
                 pbxIgrac2.Top += brzinaIgraca;
-                pbxMetak2.Top += brzinaIgraca;
             }
             if ((metak1 || pbxMetak1.Visible))
             {
                 pbxMetak1.Show();
                 pbxMetak1.Left += brzinaMetaka;
+                if ((pbxIgrac2.Left <= pbxMetak1.Left || pbxIgrac2.Right <= pbxMetak1.Right) &&
+                (pbxIgrac2.Top <= pbxMetak1.Bottom && pbxIgrac2.Bottom >= pbxMetak1.Top))
+                {
+                    pbxMetak1.Hide();
+                    poeni2 = true;
+                }
             }
-            if ((metak2 || pbxMetak2.Visible))
+            if (metak2 || pbxMetak2.Visible)
             {
                 pbxMetak2.Show();
                 pbxMetak2.Left -= brzinaMetaka;
+                if ((pbxIgrac1.Left >= pbxMetak2.Left || pbxIgrac1.Right >= pbxMetak2.Right) &&
+                 (pbxIgrac1.Top <= pbxMetak2.Bottom && pbxIgrac1.Bottom >= pbxMetak2.Top))
+                {
+                    pbxMetak2.Hide();
+                    poeni1 = true;
+                }
             }
-           
+
         }
 
         private void pbxIgrac2_Click(object sender, EventArgs e)
