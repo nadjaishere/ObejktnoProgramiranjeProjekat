@@ -118,19 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="9a2f1c6f026149450365f8a8d06ab9b8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9a2f1c6f026149450365f8a8d06ab9b8.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Minecraft Bee GIF - Minecraft Bee Happy - Discover &amp; Share GIFs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minecraft Bee GIF - Minecraft Bee Happy - Discover &amp; Share GIFs.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="viber_image_2023-11-10_16-54-38-469" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viber_image_2023-11-10_16-54-38-469.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Alienpls3 Dance Sticker - Alienpls3 Alienpls Dance - Discover &amp; Share GIFs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alienpls3 Dance Sticker - Alienpls3 Alienpls Dance - Discover &amp; Share GIFs.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Minecraft Bee GIF - Minecraft Bee Happy - Discover &amp; Share GIFs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minecraft Bee GIF - Minecraft Bee Happy - Discover &amp; Share GIFs.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9a2f1c6f026149450365f8a8d06ab9b8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9a2f1c6f026149450365f8a8d06ab9b8.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="734D8597-9FF9-493B-8F12-C9C45A1BFB5D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\734D8597-9FF9-493B-8F12-C9C45A1BFB5D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="9a2f1c6f026149450365f8a8d06ab9b81" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9a2f1c6f026149450365f8a8d06ab9b81.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="viber_image_2023-11-10_16-54-38-469" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\viber_image_2023-11-10_16-54-38-469.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Vanzemaljac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vanzemaljac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

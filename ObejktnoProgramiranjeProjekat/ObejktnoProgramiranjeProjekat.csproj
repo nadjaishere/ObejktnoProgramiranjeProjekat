@@ -104,5 +104,11 @@
   <ItemGroup>
     <None Include="Resources\viber_image_2023-11-10_16-54-38-469.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\734D8597-9FF9-493B-8F12-C9C45A1BFB5D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vanzemaljac.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

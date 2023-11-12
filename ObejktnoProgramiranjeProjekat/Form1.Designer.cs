@@ -159,16 +159,20 @@
             // 
             // pBx1
             // 
-            this.pBx1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.pBx1.BackColor = System.Drawing.Color.Transparent;
+            this.pBx1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
+            this.pBx1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBx1.Location = new System.Drawing.Point(263, 291);
             this.pBx1.Name = "pBx1";
-            this.pBx1.Size = new System.Drawing.Size(124, 158);
+            this.pBx1.Size = new System.Drawing.Size(141, 158);
             this.pBx1.TabIndex = 7;
             this.pBx1.TabStop = false;
             // 
             // pBx2
             // 
-            this.pBx2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.pBx2.BackColor = System.Drawing.Color.Transparent;
+            this.pBx2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources.Vanzemaljac;
+            this.pBx2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBx2.Location = new System.Drawing.Point(441, 291);
             this.pBx2.Name = "pBx2";
             this.pBx2.Size = new System.Drawing.Size(124, 158);
@@ -177,7 +181,9 @@
             // 
             // pBx3
             // 
-            this.pBx3.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.pBx3.BackColor = System.Drawing.Color.Transparent;
+            this.pBx3.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources.Vanzemaljac;
+            this.pBx3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBx3.Location = new System.Drawing.Point(816, 291);
             this.pBx3.Name = "pBx3";
             this.pBx3.Size = new System.Drawing.Size(124, 158);
@@ -186,10 +192,12 @@
             // 
             // pBx4
             // 
-            this.pBx4.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.pBx4.BackColor = System.Drawing.Color.Transparent;
+            this.pBx4.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
+            this.pBx4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBx4.Location = new System.Drawing.Point(633, 291);
             this.pBx4.Name = "pBx4";
-            this.pBx4.Size = new System.Drawing.Size(124, 158);
+            this.pBx4.Size = new System.Drawing.Size(145, 158);
             this.pBx4.TabIndex = 10;
             this.pBx4.TabStop = false;
             // 

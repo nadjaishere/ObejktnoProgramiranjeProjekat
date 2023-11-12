@@ -63,6 +63,16 @@ namespace ObejktnoProgramiranjeProjekat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _734D8597_9FF9_493B_8F12_C9C45A1BFB5D {
+            get {
+                object obj = ResourceManager.GetObject("734D8597-9FF9-493B-8F12-C9C45A1BFB5D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _9a2f1c6f026149450365f8a8d06ab9b8 {
             get {
                 object obj = ResourceManager.GetObject("9a2f1c6f026149450365f8a8d06ab9b8", resourceCulture);
@@ -96,6 +106,16 @@ namespace ObejktnoProgramiranjeProjekat.Properties {
         internal static System.Drawing.Bitmap Minecraft_Bee_GIF___Minecraft_Bee_Happy___Discover___Share_GIFs {
             get {
                 object obj = ResourceManager.GetObject("Minecraft Bee GIF - Minecraft Bee Happy - Discover & Share GIFs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vanzemaljac {
+            get {
+                object obj = ResourceManager.GetObject("Vanzemaljac", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
