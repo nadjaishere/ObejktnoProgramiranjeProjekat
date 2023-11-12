@@ -16,13 +16,15 @@ namespace ObejktnoProgramiranjeProjekat
         public bool metak1, metak2;
         int brzinaIgraca = 10;
         int brzinaMetaka = 30;
+        int brojac_metaka1 = 5;
+        int brojac_metaka2 = 5;
+        int broj_zivota1=5,broj_zivota2=5;
         Random rand = new Random(); 
         public frmIgra()
         {
             InitializeComponent();
             this.KeyPreview = true;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             frmPocetniMeni frm = new frmPocetniMeni();
@@ -34,8 +36,18 @@ namespace ObejktnoProgramiranjeProjekat
         {
             pbxMetak2.Hide();
             pbxMetak1.Hide();
-        }
+            Timer MetakTimer = new Timer();
+            MetakTimer.Interval = (10 * 1000);
+            MetakTimer.Tick += new EventHandler(MetakTimerTick);
+            MetakTimer.Start();
+            
 
+        }
+        private void MetakTimerTick(object sender, EventArgs e)
+        {
+            brojac_metaka1 = 5;
+            brojac_metaka2 = 5;
+        }
         private void frmIgra_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up) pomeriGore2 = true;
@@ -44,13 +56,30 @@ namespace ObejktnoProgramiranjeProjekat
             if (e.KeyCode == Keys.S) pomeriDole1 = true;
             if (e.KeyCode == Keys.A)
             {
-                metak1 = true;
-                pbxMetak1.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                if (brojac_metaka1 > 0)
+                {
+                    pbxMetak1.Top = pbxIgrac1.Top;
+                    pbxMetak1.Left= pbxIgrac1.Left;
+                    metak1 = true;
+                    pbxMetak1.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                    brojac_metaka1--;
+                   // MessageBox.Show(Convert.ToString(brojac_metaka1));
+                }
+                
+
+
             }
             if (e.KeyCode == Keys.Enter)
             {
-                metak2 = true;
-                pbxMetak2.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                if (brojac_metaka2>0)
+                {
+                    pbxMetak2.Top = pbxIgrac2.Top;
+                    pbxMetak2.Left = pbxIgrac2.Left;
+                    metak2 = true;
+                    pbxMetak2.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                    brojac_metaka2--;
+                    //MessageBox.Show(Convert.ToString(brojac_metaka2));
+                }
             }
         }
 
@@ -96,13 +125,12 @@ namespace ObejktnoProgramiranjeProjekat
                 pbxIgrac2.Top += brzinaIgraca;
                 pbxMetak2.Top += brzinaIgraca;
             }
-            if (metak1 || pbxMetak1.Visible)
+            if ((metak1 || pbxMetak1.Visible))
             {
                 pbxMetak1.Show();
                 pbxMetak1.Left += brzinaMetaka;
             }
-            
-            if(metak2 || pbxMetak2.Visible)
+            if ((metak2 || pbxMetak2.Visible))
             {
                 pbxMetak2.Show();
                 pbxMetak2.Left -= brzinaMetaka;
