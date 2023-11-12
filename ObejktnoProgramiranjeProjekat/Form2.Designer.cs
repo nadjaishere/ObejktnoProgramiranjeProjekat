@@ -90,7 +90,7 @@
             // 
             // pbxMetak2
             // 
-            this.pbxMetak2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.pbxMetak2.BackColor = System.Drawing.Color.White;
             this.pbxMetak2.Location = new System.Drawing.Point(974, 285);
             this.pbxMetak2.Name = "pbxMetak2";
             this.pbxMetak2.Size = new System.Drawing.Size(15, 15);
@@ -99,7 +99,7 @@
             // 
             // pbxMetak1
             // 
-            this.pbxMetak1.BackColor = System.Drawing.Color.Red;
+            this.pbxMetak1.BackColor = System.Drawing.Color.White;
             this.pbxMetak1.Location = new System.Drawing.Point(132, 285);
             this.pbxMetak1.Name = "pbxMetak1";
             this.pbxMetak1.Size = new System.Drawing.Size(15, 15);

@@ -12,9 +12,11 @@ namespace ObejktnoProgramiranjeProjekat
 {
     public partial class frmIgra : Form
     {
-        bool pomeriGore1, pomeriDole1, pomeriGore2, pomeriDole2, metak1, metak2;
+        bool pomeriGore1, pomeriDole1, pomeriGore2, pomeriDole2;
+        public bool metak1, metak2;
         int brzinaIgraca = 10;
         int brzinaMetaka = 30;
+        Random rand = new Random(); 
         public frmIgra()
         {
             InitializeComponent();
@@ -40,9 +42,16 @@ namespace ObejktnoProgramiranjeProjekat
             if (e.KeyCode == Keys.Down) pomeriDole2 = true;
             if (e.KeyCode == Keys.W) pomeriGore1 = true;
             if (e.KeyCode == Keys.S) pomeriDole1 = true;
-            if (e.KeyCode == Keys.Space) metak1 = true;
-            if (e.KeyCode == Keys.Enter) metak2 = true;
-
+            if (e.KeyCode == Keys.A)
+            {
+                metak1 = true;
+                pbxMetak1.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                metak2 = true;
+                pbxMetak2.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+            }
         }
 
         private void pbxIgrac1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -67,22 +76,38 @@ namespace ObejktnoProgramiranjeProjekat
 
         private void tmrNmp_Tick(object sender, EventArgs e)
         {
-            if (pomeriGore1 && pbxIgrac1.Top > 0) pbxIgrac1.Top -= brzinaIgraca;
-            if (pomeriDole1 && pbxIgrac1.Top < 500) pbxIgrac1.Top += brzinaIgraca;
-            if (pomeriGore2 && pbxIgrac2.Top > 0) pbxIgrac2.Top -= brzinaIgraca;
-            if (pomeriDole2 && pbxIgrac2.Top < 500) pbxIgrac2.Top += brzinaIgraca;
-            if (metak1 && pbxMetak1.Left < 975)
+            if (pomeriGore1 && pbxIgrac1.Top > 0)
+            {
+                pbxIgrac1.Top -= brzinaIgraca;
+                pbxMetak1.Top -= brzinaIgraca;
+            }
+            if (pomeriDole1 && pbxIgrac1.Top < 500)
+            {
+                pbxIgrac1.Top += brzinaIgraca;
+                pbxMetak1.Top += brzinaIgraca;
+            }
+            if (pomeriGore2 && pbxIgrac2.Top > 0)
+            {
+                pbxIgrac2.Top -= brzinaIgraca;
+                pbxMetak2.Top -= brzinaIgraca;  
+            }
+            if (pomeriDole2 && pbxIgrac2.Top < 500)
+            {
+                pbxIgrac2.Top += brzinaIgraca;
+                pbxMetak2.Top += brzinaIgraca;
+            }
+            if (metak1 || pbxMetak1.Visible)
             {
                 pbxMetak1.Show();
                 pbxMetak1.Left += brzinaMetaka;
             }
-            if (metak2)
+            
+            if(metak2 || pbxMetak2.Visible)
             {
                 pbxMetak2.Show();
                 pbxMetak2.Left -= brzinaMetaka;
-                if (pbxMetak2.Left > 70) metak2 = true;
-                else metak2 = false;
             }
+           
         }
 
         private void pbxIgrac2_Click(object sender, EventArgs e)
@@ -101,8 +126,8 @@ namespace ObejktnoProgramiranjeProjekat
             if (e.KeyCode == Keys.Down) pomeriDole2 = false;
             if (e.KeyCode == Keys.W) pomeriGore1 = false;
             if (e.KeyCode == Keys.S) pomeriDole1 = false;
-            if (e.KeyCode == Keys.Space) metak1 = false;
-            if (e.KeyCode == Keys.Enter) metak2 = false;    
+            if (e.KeyCode == Keys.A) metak1 = false;
+            if (e.KeyCode == Keys.Enter) metak2 = false;
         }
     }
 }
