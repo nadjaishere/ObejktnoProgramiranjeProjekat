@@ -76,7 +76,7 @@
             // tmrNmp
             // 
             this.tmrNmp.Enabled = true;
-            this.tmrNmp.Interval = 50;
+            this.tmrNmp.Interval = 20;
             this.tmrNmp.Tick += new System.EventHandler(this.tmrNmp_Tick);
             // 
             // tmrMetkovi
@@ -126,6 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.ClientSize = new System.Drawing.Size(1184, 678);
             this.Controls.Add(this.tbxPoeni2);
             this.Controls.Add(this.tbxPoeni1);
