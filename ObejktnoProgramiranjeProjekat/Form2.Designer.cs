@@ -37,6 +37,8 @@
             this.pbxMetak2 = new System.Windows.Forms.PictureBox();
             this.pbxMetak1 = new System.Windows.Forms.PictureBox();
             this.btnIzlaz2 = new System.Windows.Forms.Button();
+            this.tbxPoeni1 = new System.Windows.Forms.TextBox();
+            this.tbxPoeni2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIgrac1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIgrac2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMetak2)).BeginInit();
@@ -121,11 +123,29 @@
             this.btnIzlaz2.UseVisualStyleBackColor = false;
             this.btnIzlaz2.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // tbxPoeni1
+            // 
+            this.tbxPoeni1.Location = new System.Drawing.Point(453, 12);
+            this.tbxPoeni1.Name = "tbxPoeni1";
+            this.tbxPoeni1.ReadOnly = true;
+            this.tbxPoeni1.Size = new System.Drawing.Size(107, 22);
+            this.tbxPoeni1.TabIndex = 6;
+            // 
+            // tbxPoeni2
+            // 
+            this.tbxPoeni2.Location = new System.Drawing.Point(621, 12);
+            this.tbxPoeni2.Name = "tbxPoeni2";
+            this.tbxPoeni2.ReadOnly = true;
+            this.tbxPoeni2.Size = new System.Drawing.Size(107, 22);
+            this.tbxPoeni2.TabIndex = 7;
+            // 
             // frmIgra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 678);
+            this.Controls.Add(this.tbxPoeni2);
+            this.Controls.Add(this.tbxPoeni1);
             this.Controls.Add(this.btnIzlaz2);
             this.Controls.Add(this.pbxMetak1);
             this.Controls.Add(this.pbxMetak2);
@@ -142,6 +162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxMetak2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMetak1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -155,5 +176,7 @@
         private System.Windows.Forms.PictureBox pbxMetak2;
         private System.Windows.Forms.PictureBox pbxMetak1;
         private System.Windows.Forms.Button btnIzlaz2;
+        private System.Windows.Forms.TextBox tbxPoeni1;
+        private System.Windows.Forms.TextBox tbxPoeni2;
     }
 }
