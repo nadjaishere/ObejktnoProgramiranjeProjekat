@@ -15,12 +15,13 @@ namespace ObejktnoProgramiranjeProjekat
         bool pomeriGore1, pomeriDole1, pomeriGore2, pomeriDole2;
         public bool metak1, metak2;
         int brzinaIgraca = 10;
-        int brzinaMetaka = 50;
-        int brojac_metaka1 = 5;
-        int brojac_metaka2 = 5;
-        int broj_zivota1=5,broj_zivota2=5;
+        int brzinaMetaka = 40;
+        int brojac_metaka1 = 6;
+        int brojac_metaka2 = 6;
         int brojacPoena1 = 100, brojacPoena2 = 100;
-        Random rand = new Random(); 
+        Random rand = new Random();
+        List<PictureBox> pBx1 = new List<PictureBox>();
+        List<PictureBox> pBx2 = new List<PictureBox>();
         public frmIgra()
         {
             InitializeComponent();
@@ -35,7 +36,6 @@ namespace ObejktnoProgramiranjeProjekat
 
         private void frmIgra_Load(object sender, EventArgs e)
         {
-            pbxMetak2.Hide();
             pbxMetak1.Hide();
             Timer MetakTimer = new Timer();
             MetakTimer.Interval = (10 * 1000);
@@ -43,11 +43,29 @@ namespace ObejktnoProgramiranjeProjekat
             MetakTimer.Start();
             tbxPoeni1.Text = "100";
             tbxPoeni2.Text = "100";
+            for (int i = 0; i < 7; i++)
+            {
+                pBx1.Add(new PictureBox());
+                pBx1[i].Size = pbxMetak1.Size;
+                pBx1[i].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                pBx1[i].Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
+                //pBx[i].Hide();
+            }
+            
+            for (int i = 0; i < 7; i++)
+            {
+                pBx2.Add(new PictureBox());
+                pBx2[i].Size = pbxMetak1.Size;
+                pBx2[i].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                pBx2[i].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
+                //pBx[i].Hide();
+            }
+            //MessageBox.Show(Convert.ToString(pBx1.Count));
         }
         private void MetakTimerTick(object sender, EventArgs e)
         {
-            brojac_metaka1 = 5;
-            brojac_metaka2 = 5;
+            brojac_metaka1 = 6;
+            brojac_metaka2 = 6;
         }
         private void frmIgra_KeyDown(object sender, KeyEventArgs e)
         {
@@ -57,22 +75,30 @@ namespace ObejktnoProgramiranjeProjekat
             if (e.KeyCode == Keys.S) pomeriDole1 = true;
             if (e.KeyCode == Keys.A)
             {
-                pbxMetak1.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
-                pbxMetak1.Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
-                if (brojac_metaka1 > 0)
+                if (brojac_metaka1 > 1)
                 {
-                    metak1 = true;
+                    //MessageBox.Show(Convert.ToString(brojac_metaka1));
                     brojac_metaka1--;
+                    this.Controls.Add(pBx1[brojac_metaka1]);
+                    pBx1[brojac_metaka1].Show();
+                    pBx1[brojac_metaka1].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                    pBx1[brojac_metaka1].Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
+                    metak1 = true;
                 }
             }
             if (e.KeyCode == Keys.Enter)
             {
-                pbxMetak2.BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
-                pbxMetak2.Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
-                if (brojac_metaka2 > 0)
+                
+                if (brojac_metaka2 > 1)
                 {
-                    metak2 = true;
+                    //MessageBox.Show(Convert.ToString(brojac_metaka2));
                     brojac_metaka2--;
+                    this.Controls.Add(pBx2[brojac_metaka2]);
+                    pBx2[brojac_metaka2].Show();
+                    pBx2[brojac_metaka2].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                    pBx2[brojac_metaka2].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
+                    metak2 = true;
+
                 }
             }
         }
@@ -93,6 +119,11 @@ namespace ObejktnoProgramiranjeProjekat
         }
 
         private void tmrMetkovi_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbxIgrac1_Click(object sender, EventArgs e)
         {
 
         }
@@ -120,41 +151,55 @@ namespace ObejktnoProgramiranjeProjekat
             {
                 pbxIgrac2.Top += brzinaIgraca;
             }
-            if ((metak1 || pbxMetak1.Visible))
+            if (metak1 || pBx1[brojac_metaka1].Visible)
             {
-                pbxMetak1.Show();
-                pbxMetak1.Left += brzinaMetaka;
-                if ((pbxIgrac2.Left <= pbxMetak1.Left || pbxIgrac2.Right <= pbxMetak1.Right) &&
-                (pbxIgrac2.Top <= pbxMetak1.Bottom && pbxIgrac2.Bottom >= pbxMetak1.Top))
+                for (int i = 0; i < 7; i++)
                 {
-                    pbxMetak1.Hide();
-                    brojacPoena2 -= 10;
-                    tbxPoeni2.Text = brojacPoena2.ToString();
-                    if (brojacPoena2 <= 0)
+                    pBx1[i].Show();
+                    if (pBx1[i].Visible)
                     {
-                        MessageBox.Show("Igrač 1 je pobedio!");
-                        tbxPoeni1.Text = "100";
-                        tbxPoeni2.Text = "100";
+                        pBx1[i].Left += brzinaMetaka;
+                        if ((pbxIgrac2.Left <= pBx1[i].Left || pbxIgrac2.Right <= pBx1[i].Right) && (pbxIgrac2.Top <= pBx1[i].Bottom && pbxIgrac2.Bottom >= pBx1[i].Top))
+                        {
+                            pBx1[i].Hide();
+                            brojacPoena2 -= 10;
+                            tbxPoeni2.Text = brojacPoena2.ToString();
+                            if (brojacPoena2 <= 0)
+                            {
+                                //MessageBox.Show("Igrač 2 je pobedio!");
+                                tbxPoeni1.Text = "100";
+                                tbxPoeni2.Text = "100";
+                            }
+                        }
                     }
+
                 }
             }
-            if (metak2 || pbxMetak2.Visible)
+            if (metak2 || pBx2[brojac_metaka2].Visible)
             {
-                pbxMetak2.Show();
-                pbxMetak2.Left -= brzinaMetaka;
-                if ((pbxIgrac1.Left >= pbxMetak2.Left || pbxIgrac1.Right >= pbxMetak2.Right) &&
-                 (pbxIgrac1.Top <= pbxMetak2.Bottom && pbxIgrac1.Bottom >= pbxMetak2.Top))
+                for (int i = 0; i < 7; i++)
                 {
-                    pbxMetak2.Hide();
-                    brojacPoena1 -= 10;
-                    tbxPoeni1.Text = brojacPoena1.ToString();
-                    if (brojacPoena1 <= 0)
+                    if (pBx2[i].Visible)
                     {
-                        MessageBox.Show("Igrač 2 je pobedio!");
-                        tbxPoeni1.Text = "100";
-                        tbxPoeni2.Text = "100";
+                        pBx2[i].Show();
+                        pBx2[i].Left -= brzinaMetaka;
+                        if ((pbxIgrac1.Left >= pBx2[i].Left || pbxIgrac1.Right >= pBx2[i].Right) && (pbxIgrac1.Top <= pBx2[i].Bottom && pbxIgrac1.Bottom >= pBx2[i].Top))
+                        {
+                            pBx2[i].Hide();
+                            brojacPoena1 -= 10;
+                            tbxPoeni1.Text = brojacPoena1.ToString();
+
+                            if (brojacPoena1 <= 0)
+                            {
+                                //MessageBox.Show("Igrač 2 je pobedio!");
+                                tbxPoeni1.Text = "100";
+                                tbxPoeni2.Text = "100";
+                            }
+                        }
                     }
+                    
                 }
+
             }
 
         }

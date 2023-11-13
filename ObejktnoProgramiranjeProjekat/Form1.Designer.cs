@@ -262,6 +262,7 @@
             // rtbUputstvo
             // 
             this.rtbUputstvo.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbUputstvo.ForeColor = System.Drawing.Color.Black;
             this.rtbUputstvo.Location = new System.Drawing.Point(310, 182);
             this.rtbUputstvo.Name = "rtbUputstvo";
             this.rtbUputstvo.ReadOnly = true;

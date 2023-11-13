@@ -34,14 +34,12 @@
             this.pbxIgrac2 = new System.Windows.Forms.PictureBox();
             this.tmrNmp = new System.Windows.Forms.Timer(this.components);
             this.tmrMetkovi = new System.Windows.Forms.Timer(this.components);
-            this.pbxMetak2 = new System.Windows.Forms.PictureBox();
             this.pbxMetak1 = new System.Windows.Forms.PictureBox();
             this.btnIzlaz2 = new System.Windows.Forms.Button();
             this.tbxPoeni1 = new System.Windows.Forms.TextBox();
             this.tbxPoeni2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIgrac1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIgrac2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMetak2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMetak1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +64,7 @@
             this.pbxIgrac1.Size = new System.Drawing.Size(69, 63);
             this.pbxIgrac1.TabIndex = 1;
             this.pbxIgrac1.TabStop = false;
+            this.pbxIgrac1.Click += new System.EventHandler(this.pbxIgrac1_Click);
             this.pbxIgrac1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.pbxIgrac1_PreviewKeyDown);
             // 
             // pbxIgrac2
@@ -90,15 +89,6 @@
             this.tmrMetkovi.Enabled = true;
             this.tmrMetkovi.Interval = 50;
             this.tmrMetkovi.Tick += new System.EventHandler(this.tmrMetkovi_Tick);
-            // 
-            // pbxMetak2
-            // 
-            this.pbxMetak2.BackColor = System.Drawing.Color.White;
-            this.pbxMetak2.Location = new System.Drawing.Point(974, 285);
-            this.pbxMetak2.Name = "pbxMetak2";
-            this.pbxMetak2.Size = new System.Drawing.Size(15, 15);
-            this.pbxMetak2.TabIndex = 3;
-            this.pbxMetak2.TabStop = false;
             // 
             // pbxMetak1
             // 
@@ -148,7 +138,6 @@
             this.Controls.Add(this.tbxPoeni1);
             this.Controls.Add(this.btnIzlaz2);
             this.Controls.Add(this.pbxMetak1);
-            this.Controls.Add(this.pbxMetak2);
             this.Controls.Add(this.pbxIgrac2);
             this.Controls.Add(this.pbxIgrac1);
             this.Controls.Add(this.btnNazad2);
@@ -159,7 +148,6 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmIgra_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbxIgrac1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIgrac2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMetak2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMetak1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -173,7 +161,6 @@
         private System.Windows.Forms.PictureBox pbxIgrac2;
         private System.Windows.Forms.Timer tmrNmp;
         private System.Windows.Forms.Timer tmrMetkovi;
-        private System.Windows.Forms.PictureBox pbxMetak2;
         private System.Windows.Forms.PictureBox pbxMetak1;
         private System.Windows.Forms.Button btnIzlaz2;
         private System.Windows.Forms.TextBox tbxPoeni1;
