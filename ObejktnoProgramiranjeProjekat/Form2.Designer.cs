@@ -52,7 +52,6 @@
             this.btnNazad2.TabIndex = 0;
             this.btnNazad2.Text = "<";
             this.btnNazad2.UseVisualStyleBackColor = true;
-            this.btnNazad2.TabStopChanged += new System.EventHandler(this.pbxMetak2_Click);
             this.btnNazad2.Click += new System.EventHandler(this.button1_Click);
             this.btnNazad2.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.btnNazad2_PreviewKeyDown);
             // 
@@ -64,8 +63,6 @@
             this.pbxIgrac1.Size = new System.Drawing.Size(69, 63);
             this.pbxIgrac1.TabIndex = 1;
             this.pbxIgrac1.TabStop = false;
-            this.pbxIgrac1.Click += new System.EventHandler(this.pbxIgrac1_Click);
-            this.pbxIgrac1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.pbxIgrac1_PreviewKeyDown);
             // 
             // pbxIgrac2
             // 
@@ -75,20 +72,17 @@
             this.pbxIgrac2.Size = new System.Drawing.Size(69, 63);
             this.pbxIgrac2.TabIndex = 2;
             this.pbxIgrac2.TabStop = false;
-            this.pbxIgrac2.Click += new System.EventHandler(this.pbxIgrac2_Click);
-            this.pbxIgrac2.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.pbxIgrac2_PreviewKeyDown);
             // 
             // tmrNmp
             // 
             this.tmrNmp.Enabled = true;
-            this.tmrNmp.Interval = 20;
+            this.tmrNmp.Interval = 50;
             this.tmrNmp.Tick += new System.EventHandler(this.tmrNmp_Tick);
             // 
             // tmrMetkovi
             // 
             this.tmrMetkovi.Enabled = true;
             this.tmrMetkovi.Interval = 50;
-            this.tmrMetkovi.Tick += new System.EventHandler(this.tmrMetkovi_Tick);
             // 
             // pbxMetak1
             // 
@@ -98,7 +92,6 @@
             this.pbxMetak1.Size = new System.Drawing.Size(15, 15);
             this.pbxMetak1.TabIndex = 4;
             this.pbxMetak1.TabStop = false;
-            this.pbxMetak1.Click += new System.EventHandler(this.pbxMetak2_Click);
             // 
             // btnIzlaz2
             // 
