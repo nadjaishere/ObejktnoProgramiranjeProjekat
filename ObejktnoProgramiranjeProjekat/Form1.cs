@@ -20,7 +20,7 @@ namespace ObejktnoProgramiranjeProjekat
         private void Form1_Load(object sender, EventArgs e)
         {
             btnNazad.Hide();
-            lbxUputstvo.Hide();
+            rtbUputstvo.Hide();
             pBx1.Hide();
             pBx2.Hide();
             pBx3.Hide();
@@ -58,12 +58,11 @@ namespace ObejktnoProgramiranjeProjekat
 
         private void btnUputstvo_Click(object sender, EventArgs e)
         {
+            rtbUputstvo.Show();
             btnNazad.Show();
             btnPodesavanja.Hide();
             btnStart.Hide();
             btnUputstvo.Hide();
-            lbxUputstvo.Show();
-            lbxUputstvo.Focus();
             btnIzlaz.Hide();
         }
 
@@ -73,7 +72,7 @@ namespace ObejktnoProgramiranjeProjekat
             btnStart.Show();
             btnPodesavanja.Show();
             btnUputstvo.Show();
-            lbxUputstvo.Hide();
+            rtbUputstvo.Hide();
             pBx1.Hide();
             pBx2.Hide();
             pBx3.Hide();

@@ -117,4 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="rtbUputstvo.Text" xml:space="preserve">
+    <value>UPUTSTVO
+
+Dobrodošli! Nalazite se u svemiru i borite se za svoju planetu.
+Odlaskom u podešavanja možete izabrati da li je vaš igrač čovek ili vanzemaljac.
+
+Igrači svoje kretanje mogu da vrše isključivo pravolinijski gore-dole.
+Igrač 1 (igrač koji se nalazi na levoj strani) za kretanje koristi tastere W i S za kretanje, a taster A za pucanje.
+Igrač 2 (igrač koji se nalazi na desnoj strani) za kretanje koristi tastere pgUp i pgDown, a taster Enter za pucanje.
+Tasteri W i pgUp služe za kretanje ka gore.
+Tasteri S i pgDown služe za kretanje ka dole.
+
+Svaki igrač igru kreće sa 100% energije.
+Energija se smanjuje za 10% ukoliko igrač bude pogođen metkom.
+Igra se završava kada jedan od igrača izgubi svu energiju.</value>
+  </data>
 </root>

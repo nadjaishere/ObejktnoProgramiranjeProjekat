@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPocetniMeni));
             this.button1 = new System.Windows.Forms.Button();
             this.pbxPozadina = new System.Windows.Forms.PictureBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnPodesavanja = new System.Windows.Forms.Button();
             this.btnUputstvo = new System.Windows.Forms.Button();
             this.btnNazad = new System.Windows.Forms.Button();
-            this.lbxUputstvo = new System.Windows.Forms.ListBox();
             this.pBx1 = new System.Windows.Forms.PictureBox();
             this.pBx2 = new System.Windows.Forms.PictureBox();
             this.pBx3 = new System.Windows.Forms.PictureBox();
@@ -46,6 +46,7 @@
             this.chcBx3 = new System.Windows.Forms.CheckBox();
             this.chcBx4 = new System.Windows.Forms.CheckBox();
             this.btnIzlaz = new System.Windows.Forms.Button();
+            this.rtbUputstvo = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBx1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBx2)).BeginInit();
@@ -127,35 +128,13 @@
             // 
             this.btnNazad.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNazad.ForeColor = System.Drawing.Color.Black;
-            this.btnNazad.Location = new System.Drawing.Point(1023, 29);
+            this.btnNazad.Location = new System.Drawing.Point(1093, 12);
             this.btnNazad.Name = "btnNazad";
             this.btnNazad.Size = new System.Drawing.Size(75, 75);
             this.btnNazad.TabIndex = 5;
             this.btnNazad.Text = "<";
             this.btnNazad.UseVisualStyleBackColor = true;
             this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
-            // 
-            // lbxUputstvo
-            // 
-            this.lbxUputstvo.FormattingEnabled = true;
-            this.lbxUputstvo.ItemHeight = 16;
-            this.lbxUputstvo.Items.AddRange(new object[] {
-            "UPUTSTVO",
-            "",
-            "Dva izabrana igrača se nalaze u svemiru na određenoj razdaljini od nekoliko svetl" +
-                "osnih godina.",
-            "Da bi zaštitili svoje planete koje su u dugogodišnjem ratu, vanzemaljci pucaju je" +
-                "dni na druge.",
-            "Da ne bi pucali rafale jedni po drugima, imaju po 5 metkova na svakih 20 sekundi." +
-                "",
-            "Kada jedan svemirski brod pogodi drugi, drugom se smanjuje broj poena (health) ko" +
-                "je poseduje.",
-            "Igra se završava onda kada jednom igraču ponestanu svi poeni, to jest ostane na n" +
-                "uli."});
-            this.lbxUputstvo.Location = new System.Drawing.Point(12, 231);
-            this.lbxUputstvo.Name = "lbxUputstvo";
-            this.lbxUputstvo.Size = new System.Drawing.Size(600, 276);
-            this.lbxUputstvo.TabIndex = 6;
             // 
             // pBx1
             // 
@@ -272,7 +251,7 @@
             this.btnIzlaz.BackColor = System.Drawing.Color.Red;
             this.btnIzlaz.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIzlaz.ForeColor = System.Drawing.Color.White;
-            this.btnIzlaz.Location = new System.Drawing.Point(1023, 29);
+            this.btnIzlaz.Location = new System.Drawing.Point(1093, 12);
             this.btnIzlaz.Name = "btnIzlaz";
             this.btnIzlaz.Size = new System.Drawing.Size(75, 75);
             this.btnIzlaz.TabIndex = 17;
@@ -280,12 +259,24 @@
             this.btnIzlaz.UseVisualStyleBackColor = false;
             this.btnIzlaz.Click += new System.EventHandler(this.btnIzlaz_Click);
             // 
+            // rtbUputstvo
+            // 
+            this.rtbUputstvo.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbUputstvo.Location = new System.Drawing.Point(310, 182);
+            this.rtbUputstvo.Name = "rtbUputstvo";
+            this.rtbUputstvo.ReadOnly = true;
+            this.rtbUputstvo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.rtbUputstvo.Size = new System.Drawing.Size(788, 414);
+            this.rtbUputstvo.TabIndex = 18;
+            this.rtbUputstvo.Text = resources.GetString("rtbUputstvo.Text");
+            // 
             // frmPocetniMeni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
             this.ClientSize = new System.Drawing.Size(1180, 674);
+            this.Controls.Add(this.rtbUputstvo);
             this.Controls.Add(this.btnIzlaz);
             this.Controls.Add(this.chcBx4);
             this.Controls.Add(this.chcBx3);
@@ -297,7 +288,6 @@
             this.Controls.Add(this.pBx3);
             this.Controls.Add(this.pBx2);
             this.Controls.Add(this.pBx1);
-            this.Controls.Add(this.lbxUputstvo);
             this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.btnUputstvo);
             this.Controls.Add(this.btnPodesavanja);
@@ -328,7 +318,6 @@
         private System.Windows.Forms.Button btnPodesavanja;
         private System.Windows.Forms.Button btnUputstvo;
         private System.Windows.Forms.Button btnNazad;
-        private System.Windows.Forms.ListBox lbxUputstvo;
         private System.Windows.Forms.PictureBox pBx1;
         private System.Windows.Forms.PictureBox pBx2;
         private System.Windows.Forms.PictureBox pBx3;
@@ -340,6 +329,7 @@
         private System.Windows.Forms.CheckBox chcBx3;
         private System.Windows.Forms.CheckBox chcBx4;
         private System.Windows.Forms.Button btnIzlaz;
+        private System.Windows.Forms.RichTextBox rtbUputstvo;
     }
 }
 
