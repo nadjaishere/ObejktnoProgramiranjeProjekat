@@ -92,20 +92,16 @@ namespace ObejktnoProgramiranjeProjekat
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            frmIgra form = new frmIgra();
-            if (jesteSelektovan) form.igrac1Slika = 1;
-            else form.igrac1Slika = 2;
+            frmIgra form = new frmIgra(jesteSelektovan);
             btnNazad.Show();
             btnPodesavanja.Hide();
             btnUputstvo.Hide();
             btnStart.Hide();
             btnIzlaz.Hide();
-            form.ShowDialog();
+            form.Show();
             form.Focus();
-            this.Hide();
-           
+            this.Hide();        
         }
-
         private void chcBx1_CheckedChanged(object sender, EventArgs e)
         {
             if (chcBx1.Checked)
@@ -126,6 +122,7 @@ namespace ObejktnoProgramiranjeProjekat
             {
                 chcBx4.Enabled = false;
                 chcBx1.Checked= false;
+                jesteSelektovan=false;
             }
             else
             {
@@ -139,7 +136,6 @@ namespace ObejktnoProgramiranjeProjekat
             {
                 chcBx1.Enabled = false;
                 chcBx4.Checked= false;
-                jesteSelektovan=true;
             }
             else
             {

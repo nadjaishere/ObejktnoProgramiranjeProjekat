@@ -29,20 +29,19 @@ namespace ObejktnoProgramiranjeProjekat
         bool[] nije_prosao2 = new bool[6];
         public int igrac1Slika;
         
-        public frmIgra( )
+        public frmIgra(bool jesteSelektovan)
         {
             InitializeComponent();
             this.KeyPreview = true;
-            if (igrac1Slika == 1)
-            {
-                
-                pbxIgrac2.Image = Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
-                pbxIgrac1.Image = Properties.Resources.Vanzemaljac;
-            }
-            else
+            if (jesteSelektovan)
             {
                 pbxIgrac1.Image = Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
                 pbxIgrac2.Image = Properties.Resources.Vanzemaljac;
+            }
+            else if(!jesteSelektovan)
+            {
+                pbxIgrac2.Image = Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
+                pbxIgrac1.Image = Properties.Resources.Vanzemaljac;
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -170,9 +169,7 @@ namespace ObejktnoProgramiranjeProjekat
                     }
                     if (pBx1[i].Top <= pbxIgrac2.Bottom && pBx1[i].Bottom >= pbxIgrac2.Top && pBx1[i].Right >= pbxIgrac2.Left
                         && pBx1[i].Left<= pbxIgrac2.Right && nije_prosao1[i] == true)
-                    {
-                        brojacPoena2 -= 10;
-                       
+                    {      
                         if (brojacPoena2 == 0)
                         {
                             tbxPoeni2.Text = "0"; 
@@ -183,12 +180,12 @@ namespace ObejktnoProgramiranjeProjekat
                             brojacPoena2 = 100;
                             break;
                         }
-                        else
-                        {
+                        
+                            brojacPoena2 -= 10;
                             tbxPoeni2.Text = brojacPoena2.ToString();
                             nije_prosao1[i] = false;
                             pBx1[i].Hide();
-                        }
+                        
                     }
                 }
             }
@@ -209,7 +206,7 @@ namespace ObejktnoProgramiranjeProjekat
                     if (pBx2[i].Top <= pbxIgrac1.Bottom && pBx2[i].Bottom >= pbxIgrac1.Top 
                         && pBx2[i].Left <= pbxIgrac1.Right && pBx2[i].Right <= pbxIgrac1.Left && nije_prosao2[i] == true)
                     {
-                        brojacPoena1 -= 10;
+                    
                        
                         if (brojacPoena1 == 0)
                         {
@@ -221,12 +218,12 @@ namespace ObejktnoProgramiranjeProjekat
                             brojacPoena2 = 100;
                             break;
                         }
-                        else
-                        {
+                        
+                            brojacPoena1 -= 10;
                             tbxPoeni1.Text = brojacPoena1.ToString();
                             nije_prosao2[i] = false;
                             pBx2[i].Hide();
-                        }
+                        
                     }
                 }
             }
