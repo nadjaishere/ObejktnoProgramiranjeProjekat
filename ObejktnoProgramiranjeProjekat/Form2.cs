@@ -179,6 +179,8 @@ namespace ObejktnoProgramiranjeProjekat
                             tbxPoeni2.Text = "100";
                             brojacPoenaIgracaLevo = 100;
                             brojacPoenaIgracaDesno = 100;
+                            pbxIgrac1.Top = 250;
+                            pbxIgrac2.Top = 250;
                             break;
                         }
                         pBxLevo[i].BackColor = Color.DarkSlateBlue;
@@ -215,6 +217,8 @@ namespace ObejktnoProgramiranjeProjekat
                             tbxPoeni2.Text = "100";
                             brojacPoenaIgracaLevo = 100;
                             brojacPoenaIgracaDesno = 100;
+                            pbxIgrac1.Top = 250;
+                            pbxIgrac2.Top = 250;
                             break;
                         }
                         pBxDesno[i].BackColor = Color.DarkSlateBlue;
