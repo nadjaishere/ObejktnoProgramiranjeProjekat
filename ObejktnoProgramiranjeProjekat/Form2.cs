@@ -170,9 +170,12 @@ namespace ObejktnoProgramiranjeProjekat
                     if (pBx1[i].Top <= pbxIgrac2.Bottom && pBx1[i].Bottom >= pbxIgrac2.Top && pBx1[i].Right >= pbxIgrac2.Left
                         && pBx1[i].Left<= pbxIgrac2.Right && nije_prosao1[i] == true)
                     {      
+                            brojacPoena2 -= 10;
+                            tbxPoeni2.Text = brojacPoena2.ToString();
+                            nije_prosao1[i] = false;
                         if (brojacPoena2 == 0)
                         {
-                            tbxPoeni2.Text = "0"; 
+                            tbxPoeni2.Text = "0";
                             MessageBox.Show("Igrac 1 je pobedio!");
                             tbxPoeni1.Text = "100";
                             tbxPoeni2.Text = "100";
@@ -180,12 +183,7 @@ namespace ObejktnoProgramiranjeProjekat
                             brojacPoena2 = 100;
                             break;
                         }
-                        
-                            brojacPoena2 -= 10;
-                            tbxPoeni2.Text = brojacPoena2.ToString();
-                            nije_prosao1[i] = false;
-                            pBx1[i].Hide();
-                        
+
                     }
                 }
             }
@@ -200,14 +198,16 @@ namespace ObejktnoProgramiranjeProjekat
                         {
                             nije_zavrsen2[i] = false;
                             pBx2[i].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
-                            pBx2[i].Hide();
+                           pBx2[i].Hide();
                         }
                     }
                     if (pBx2[i].Top <= pbxIgrac1.Bottom && pBx2[i].Bottom >= pbxIgrac1.Top 
                         && pBx2[i].Left <= pbxIgrac1.Right && pBx2[i].Right <= pbxIgrac1.Left && nije_prosao2[i] == true)
                     {
-                    
-                       
+                            brojacPoena1 -= 10;
+                            tbxPoeni1.Text = brojacPoena1.ToString();
+                            nije_prosao2[i] = false;
+
                         if (brojacPoena1 == 0)
                         {
                             tbxPoeni1.Text = "0";
@@ -218,12 +218,6 @@ namespace ObejktnoProgramiranjeProjekat
                             brojacPoena2 = 100;
                             break;
                         }
-                        
-                            brojacPoena1 -= 10;
-                            tbxPoeni1.Text = brojacPoena1.ToString();
-                            nije_prosao2[i] = false;
-                            pBx2[i].Hide();
-                        
                     }
                 }
             }

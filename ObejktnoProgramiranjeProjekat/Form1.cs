@@ -155,7 +155,6 @@ namespace ObejktnoProgramiranjeProjekat
                 chcBx2.Enabled = true;
             }
         }
-
         private void btnIzlaz_Click(object sender, EventArgs e)
         {
             this.Close();
