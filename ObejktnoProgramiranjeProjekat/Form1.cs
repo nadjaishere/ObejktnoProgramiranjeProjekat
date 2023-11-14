@@ -17,45 +17,40 @@ namespace ObejktnoProgramiranjeProjekat
         {
             InitializeComponent();
         }
-        bool jesteSelektovan = false;
+        bool jesteSelektovanaSlika1 = false;
         private void Form1_Load(object sender, EventArgs e)
         {
             btnNazad.Hide();
             rtbUputstvo.Hide();
-            pBx1.Hide();
-            pBx2.Hide();
-            pBx3.Hide();
-            pBx4.Hide();
+            pBxAstronautIgrac1.Hide();
+            pBxVanzemaljacIgrac1.Hide();
+            pBxVanzemaljacIgrac2.Hide();
+            pBxAstronautIgrac2.Hide();
             lblIgrac1.Hide();
-            lbl2.Hide();
-            chcBx1.Hide();
-            chcBx2.Hide();
-            chcBx3.Hide();
-            chcBx4.Hide();
-            chcBx1.Checked = true;
-            chcBx4.Checked = true;
+            lblIgrac2.Hide();
+            chcBxAstronautIgrac1.Hide();
+            chcBxVanzemaljacIgrac1.Hide();
+            chcBxAstronautIgrac2.Hide();
+            chcBxVanzemaljacIgrac2.Hide();
+            chcBxAstronautIgrac1.Checked = true;
+            chcBxVanzemaljacIgrac2.Checked = true;
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void button3_Click(object sender, EventArgs e)
+        private void btnPodesavanja_Click(object sender, EventArgs e)
         {
            
             btnStart.Hide();
             btnPodesavanja.Hide();
             btnUputstvo.Hide();
-            pBx1.Show();    
-            pBx2.Show();
-            pBx3.Show();
-            pBx4.Show();
+            pBxAstronautIgrac1.Show();    
+            pBxVanzemaljacIgrac1.Show();
+            pBxVanzemaljacIgrac2.Show();
+            pBxAstronautIgrac2.Show();
             lblIgrac1.Show();
-            lbl2.Show();
-            chcBx1.Show();
-            chcBx2.Show();
-            chcBx3.Show();
-            chcBx4.Show();
+            lblIgrac2.Show();
+            chcBxAstronautIgrac1.Show();
+            chcBxVanzemaljacIgrac1.Show();
+            chcBxAstronautIgrac2.Show();
+            chcBxVanzemaljacIgrac2.Show();
             btnNazad.Show();
             btnIzlaz.Hide();
         }
@@ -77,22 +72,22 @@ namespace ObejktnoProgramiranjeProjekat
             btnPodesavanja.Show();
             btnUputstvo.Show();
             rtbUputstvo.Hide();
-            pBx1.Hide();
-            pBx2.Hide();
-            pBx3.Hide();
-            pBx4.Hide();
+            pBxAstronautIgrac1.Hide();
+            pBxVanzemaljacIgrac1.Hide();
+            pBxVanzemaljacIgrac2.Hide();
+            pBxAstronautIgrac2.Hide();
             lblIgrac1.Hide();
-            lbl2.Hide();
-            chcBx1.Hide();
-            chcBx2.Hide();
-            chcBx3.Hide();
-            chcBx4.Hide();
+            lblIgrac2.Hide();
+            chcBxAstronautIgrac1.Hide();
+            chcBxVanzemaljacIgrac1.Hide();
+            chcBxAstronautIgrac2.Hide();
+            chcBxVanzemaljacIgrac2.Hide();
             btnIzlaz.Show();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            frmIgra form = new frmIgra(jesteSelektovan);
+            frmIgra form = new frmIgra(jesteSelektovanaSlika1);
             btnNazad.Show();
             btnPodesavanja.Hide();
             btnUputstvo.Hide();
@@ -104,55 +99,55 @@ namespace ObejktnoProgramiranjeProjekat
         }
         private void chcBx1_CheckedChanged(object sender, EventArgs e)
         {
-            if (chcBx1.Checked)
+            if (chcBxAstronautIgrac1.Checked)
             {
-                chcBx3.Enabled = false;
-                chcBx2.Checked = false;
-                jesteSelektovan = true;
+                chcBxAstronautIgrac2.Enabled = false;
+                chcBxVanzemaljacIgrac1.Checked = false;
+                jesteSelektovanaSlika1 = true;
             }
             else
             {
-                chcBx3.Enabled = true;
+                chcBxAstronautIgrac2.Enabled = true;
             }
         }
 
         private void chcBx2_CheckedChanged(object sender, EventArgs e)
         {
-            if (chcBx2.Checked)
+            if (chcBxVanzemaljacIgrac1.Checked)
             {
-                chcBx4.Enabled = false;
-                chcBx1.Checked= false;
-                jesteSelektovan=false;
+                chcBxVanzemaljacIgrac2.Enabled = false;
+                chcBxAstronautIgrac1.Checked= false;
+                jesteSelektovanaSlika1=false;
             }
             else
             {
-                chcBx4.Enabled = true;
+                chcBxVanzemaljacIgrac2.Enabled = true;
             }
         }
 
         private void chcBx3_CheckedChanged(object sender, EventArgs e)
         {
-            if (chcBx3.Checked)
+            if (chcBxAstronautIgrac2.Checked)
             {
-                chcBx1.Enabled = false;
-                chcBx4.Checked= false;
+                chcBxAstronautIgrac1.Enabled = false;
+                chcBxVanzemaljacIgrac2.Checked= false;
             }
             else
             {
-                chcBx1.Enabled = true;
+                chcBxAstronautIgrac1.Enabled = true;
             }
         }
 
         private void chcBx4_CheckedChanged(object sender, EventArgs e)
         {
-            if (chcBx4.Checked)
+            if (chcBxVanzemaljacIgrac2.Checked)
             {
-                chcBx2.Enabled = false;
-                chcBx3.Checked= false;
+                chcBxVanzemaljacIgrac1.Enabled = false;
+                chcBxAstronautIgrac2.Checked= false;
             }
             else
             {
-                chcBx2.Enabled = true;
+                chcBxVanzemaljacIgrac1.Enabled = true;
             }
         }
         private void btnIzlaz_Click(object sender, EventArgs e)

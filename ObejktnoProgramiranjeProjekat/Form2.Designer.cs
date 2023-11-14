@@ -32,7 +32,7 @@
             this.btnNazad2 = new System.Windows.Forms.Button();
             this.pbxIgrac1 = new System.Windows.Forms.PictureBox();
             this.pbxIgrac2 = new System.Windows.Forms.PictureBox();
-            this.tmrNmp = new System.Windows.Forms.Timer(this.components);
+            this.tmrKretanje = new System.Windows.Forms.Timer(this.components);
             this.tmrMetkovi = new System.Windows.Forms.Timer(this.components);
             this.btnIzlaz2 = new System.Windows.Forms.Button();
             this.tbxPoeni1 = new System.Windows.Forms.TextBox();
@@ -75,11 +75,11 @@
             this.pbxIgrac2.TabIndex = 2;
             this.pbxIgrac2.TabStop = false;
             // 
-            // tmrNmp
+            // tmrKretanje
             // 
-            this.tmrNmp.Enabled = true;
-            this.tmrNmp.Interval = 20;
-            this.tmrNmp.Tick += new System.EventHandler(this.tmrNmp_Tick);
+            this.tmrKretanje.Enabled = true;
+            this.tmrKretanje.Interval = 20;
+            this.tmrKretanje.Tick += new System.EventHandler(this.tmrKretanje_Tick);
             // 
             // tmrMetkovi
             // 
@@ -155,7 +155,7 @@
         private System.Windows.Forms.Button btnNazad2;
         private System.Windows.Forms.PictureBox pbxIgrac1;
         private System.Windows.Forms.PictureBox pbxIgrac2;
-        private System.Windows.Forms.Timer tmrNmp;
+        private System.Windows.Forms.Timer tmrKretanje;
         private System.Windows.Forms.Timer tmrMetkovi;
         private System.Windows.Forms.Button btnIzlaz2;
         private System.Windows.Forms.TextBox tbxPoeni1;

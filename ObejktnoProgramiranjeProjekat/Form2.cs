@@ -12,22 +12,20 @@ namespace ObejktnoProgramiranjeProjekat
 {
     public partial class frmIgra : Form
     {
-        bool pomeriGore1, pomeriDole1, pomeriGore2, pomeriDole2;
-        public bool metakLevo, metakDesno;
+        bool pomeriGoreIgracaLevo, pomeriDoleIgracaLevo, pomeriGoreIgracDesno, pomeriDoleIgracDesno;
+        public bool IspaljenMetakLevo, IspaljenMetakDesno;
         int brzinaIgraca = 10;
         int brzinaMetaka = 20;
         int brojac_metakaLevo = 5;
         int brojac_metakaDsn = 5;
-        bool neznam = true;
-        int brojacPoena1 = 100, brojacPoena2 = 100;
+        int brojacPoenaIgracaLevo= 100, brojacPoenaIgracaDesno= 100;
         Random rand = new Random();
-        List<PictureBox> pBx1 = new List<PictureBox>();
-        List<PictureBox> pBx2 = new List<PictureBox>();
+        List<PictureBox> pBxLevo = new List<PictureBox>();
+        List<PictureBox> pBxDesno = new List<PictureBox>();
         bool[] nije_zavrsenLevo = new bool[6];
         bool[] nije_prosaoLevo = new bool[6];
         bool[] nije_zavrsenDesno = new bool[6];
         bool[] nije_prosaoDesno = new bool[6];
-        public int igrac1Slika;
         
         public frmIgra(bool jesteSelektovan)
         {
@@ -54,26 +52,26 @@ namespace ObejktnoProgramiranjeProjekat
         private void frmIgra_Load(object sender, EventArgs e)
         {
             pbxMetak1.Hide();
-            Timer MetakTimer = new Timer();
-            MetakTimer.Interval = (10 * 1000);
-            MetakTimer.Tick += new EventHandler(MetakTimerTick);
-            MetakTimer.Start();
+            Timer ReloadMetaka = new Timer();
+            ReloadMetaka.Interval = (10 * 1000);
+            ReloadMetaka.Tick += new EventHandler(MetakTimerTick);
+            ReloadMetaka.Start();
             tbxPoeni1.Text = "100";
             tbxPoeni2.Text = "100";
             for (int i = 0; i < 6; i++)
             {
-                pBx1.Add(new PictureBox());
-                pBx1[i].Size = pbxMetak1.Size;
-                pBx1[i].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
-                pBx1[i].Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
+                pBxLevo.Add(new PictureBox());
+                pBxLevo[i].Size = pbxMetak1.Size;
+                pBxLevo[i].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                pBxLevo[i].Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
             }
             
             for (int i = 0; i < 6; i++)
             {
-                pBx2.Add(new PictureBox());
-                pBx2[i].Size = pbxMetak1.Size;
-                pBx2[i].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
-                pBx2[i].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
+                pBxDesno.Add(new PictureBox());
+                pBxDesno[i].Size = pbxMetak1.Size;
+                pBxDesno[i].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                pBxDesno[i].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
             }
         }
         private void MetakTimerTick(object sender, EventArgs e)
@@ -90,22 +88,22 @@ namespace ObejktnoProgramiranjeProjekat
         }
         private void frmIgra_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Up) pomeriGore2 = true;
-            if (e.KeyCode == Keys.Down) pomeriDole2 = true;
-            if (e.KeyCode == Keys.W) pomeriGore1 = true;
-            if (e.KeyCode == Keys.S) pomeriDole1 = true;
+            if (e.KeyCode == Keys.Up) pomeriGoreIgracDesno = true;
+            if (e.KeyCode == Keys.Down) pomeriDoleIgracDesno = true;
+            if (e.KeyCode == Keys.W) pomeriGoreIgracaLevo = true;
+            if (e.KeyCode == Keys.S) pomeriDoleIgracaLevo = true;
             if (e.KeyCode == Keys.A)
             {
                 if (brojac_metakaLevo > 0)
                 {
                     brojac_metakaLevo--;
-                    this.Controls.Add(pBx1[brojac_metakaLevo]);
-                    pBx1[brojac_metakaLevo].Show();
-                    pBx1[brojac_metakaLevo].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
-                    pBx1[brojac_metakaLevo].Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
+                    this.Controls.Add(pBxLevo[brojac_metakaLevo]);
+                    pBxLevo[brojac_metakaLevo].Show();
+                    pBxLevo[brojac_metakaLevo].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                    pBxLevo[brojac_metakaLevo].Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
                     nije_zavrsenLevo[brojac_metakaLevo] = true;
                     nije_prosaoLevo[brojac_metakaLevo] = true;
-                    metakLevo = true;
+                    IspaljenMetakLevo = true;
                 }
             }
             if (e.KeyCode == Keys.Enter)
@@ -114,13 +112,13 @@ namespace ObejktnoProgramiranjeProjekat
                 if (brojac_metakaDsn > 0)
                 {
                     brojac_metakaDsn--;
-                    this.Controls.Add(pBx2[brojac_metakaDsn]);
-                    pBx2[brojac_metakaDsn].Show();
-                    pBx2[brojac_metakaDsn].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
-                    pBx2[brojac_metakaDsn].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
+                    this.Controls.Add(pBxDesno[brojac_metakaDsn]);
+                    pBxDesno[brojac_metakaDsn].Show();
+                    pBxDesno[brojac_metakaDsn].BackColor = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
+                    pBxDesno[brojac_metakaDsn].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
                     nije_zavrsenDesno[brojac_metakaDsn] = true;
                     nije_prosaoDesno[brojac_metakaDsn] = true;
-                    metakDesno = true;
+                    IspaljenMetakDesno = true;
 
                 }
             }
@@ -135,103 +133,103 @@ namespace ObejktnoProgramiranjeProjekat
             e.IsInputKey = true;
         }
 
-        private void tmrNmp_Tick(object sender, EventArgs e)
+        private void tmrKretanje_Tick(object sender, EventArgs e)
         {
-            if (pomeriGore1 && pbxIgrac1.Top > 0)
+            if (pomeriGoreIgracaLevo && pbxIgrac1.Top > 20)
             {
                 pbxIgrac1.Top -= brzinaIgraca;
             }
-            if (pomeriDole1 && pbxIgrac1.Top < 500)
+            if (pomeriDoleIgracaLevo && pbxIgrac1.Top < 400)
             {
                 pbxIgrac1.Top += brzinaIgraca;
             }
-            if (pomeriGore2 && pbxIgrac2.Top > 0 && !metakDesno)
+            if (pomeriGoreIgracDesno && pbxIgrac2.Top > 20 )
             {
                 pbxIgrac2.Top -= brzinaIgraca;
             }
-            if (pomeriDole2 && pbxIgrac2.Top < 500 && !metakDesno)
+            if (pomeriDoleIgracDesno && pbxIgrac2.Top < 400 )
             {
                 pbxIgrac2.Top += brzinaIgraca;
             }
-            if (metakLevo || pBx1[brojac_metakaLevo].Visible)
+            if (IspaljenMetakLevo || pBxLevo[brojac_metakaLevo].Visible)
             {
                 for (int i = 5; i >= 0; i--)
                 {
-                    if (pBx1[i].Left <1202 && nije_zavrsenLevo[i] == true)
+                    if (pBxLevo[i].Left <1202 && nije_zavrsenLevo[i] == true)
                     {
-                        pBx1[i].Left += brzinaMetaka;
-                        if (pBx1[i].Left >=1202 )
+                        pBxLevo[i].Left += brzinaMetaka;
+                        if (pBxLevo[i].Left >=1202 )
                         {
                             nije_zavrsenLevo[i] = false;
-                            pBx1[i].Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
-                            pBx1[i].Hide();
+                            pBxLevo[i].Location = new Point((pbxIgrac1.Left + pbxIgrac1.Right) / 2, (pbxIgrac1.Top + pbxIgrac1.Bottom) / 2);
+                            pBxLevo[i].Hide();
                         }
                     }
-                    if (pBx1[i].Top <= pbxIgrac2.Bottom && pBx1[i].Bottom >= pbxIgrac2.Top && pBx1[i].Right >= pbxIgrac2.Left
-                        && pBx1[i].Left<= pbxIgrac2.Right && nije_prosaoLevo[i] == true)
+                    if (pBxLevo[i].Top <= pbxIgrac2.Bottom && pBxLevo[i].Bottom >= pbxIgrac2.Top && pBxLevo[i].Right >= pbxIgrac2.Left
+                        && pBxLevo[i].Left<= pbxIgrac2.Right && nije_prosaoLevo[i] == true)
                     {      
-                            brojacPoena2 -= 10;
-                            tbxPoeni2.Text = brojacPoena2.ToString();
+                            brojacPoenaIgracaDesno -= 10;
+                            tbxPoeni2.Text = brojacPoenaIgracaDesno.ToString();
                             nije_prosaoLevo[i] = false;
-                        if (brojacPoena2 == 0)
+                        if (brojacPoenaIgracaDesno == 0)
                         {
                             tbxPoeni2.Text = "0";
                             MessageBox.Show("Igrac 1 je pobedio!");
                             tbxPoeni1.Text = "100";
                             tbxPoeni2.Text = "100";
-                            brojacPoena1 = 100;
-                            brojacPoena2 = 100;
+                            brojacPoenaIgracaLevo = 100;
+                            brojacPoenaIgracaDesno = 100;
                             break;
                         }
-                        pBx1[i].BackColor = Color.DarkSlateBlue;
+                        pBxLevo[i].BackColor = Color.DarkSlateBlue;
 
                     }
                 }
             }
-            if(metakDesno || pBx2[brojac_metakaDsn].Visible)
+            if(IspaljenMetakDesno || pBxDesno[brojac_metakaDsn].Visible)
             {
                 for (int i = 5; i >= 0; i--)
                 {
-                    if(pBx2[i].Left > 0 && nije_zavrsenDesno[i] == true)
+                    if(pBxDesno[i].Left > 0 && nije_zavrsenDesno[i] == true)
                     {
-                        pBx2[i].Left -= brzinaMetaka;
-                        if (pBx2[i].Left <= 0)
+                        pBxDesno[i].Left -= brzinaMetaka;
+                        if (pBxDesno[i].Left <= 0)
                         {
                             nije_zavrsenDesno[i] = false;
-                            pBx2[i].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
-                           pBx2[i].Hide();
+                            pBxDesno[i].Location = new Point((pbxIgrac2.Left + pbxIgrac2.Right) / 2, (pbxIgrac2.Top + pbxIgrac2.Bottom) / 2);
+                           pBxDesno[i].Hide();
                         }
                     }
-                    if (pBx2[i].Top <= pbxIgrac1.Bottom && pBx2[i].Bottom >= pbxIgrac1.Top 
-                        && pBx2[i].Left <= pbxIgrac1.Right && pBx2[i].Right <= pbxIgrac1.Left && nije_prosaoDesno[i] == true)
+                    if (pBxDesno[i].Top <= pbxIgrac1.Bottom && pBxDesno[i].Bottom >= pbxIgrac1.Top 
+                        && pBxDesno[i].Left <= pbxIgrac1.Right && pBxDesno[i].Right <= pbxIgrac1.Left && nije_prosaoDesno[i] == true)
                     {
-                            brojacPoena1 -= 10;
-                            tbxPoeni1.Text = brojacPoena1.ToString();
+                            brojacPoenaIgracaLevo -= 10;
+                            tbxPoeni1.Text = brojacPoenaIgracaLevo.ToString();
                             nije_prosaoDesno[i] = false;
 
-                        if (brojacPoena1 == 0)
+                        if (brojacPoenaIgracaLevo == 0)
                         {
                             tbxPoeni1.Text = "0";
                             MessageBox.Show("Igrac 2 je pobedio!");
                             tbxPoeni1.Text = "100";
                             tbxPoeni2.Text = "100";
-                            brojacPoena1 = 100;
-                            brojacPoena2 = 100;
+                            brojacPoenaIgracaLevo = 100;
+                            brojacPoenaIgracaDesno = 100;
                             break;
                         }
-                        pBx2[i].BackColor = Color.DarkSlateBlue;
+                        pBxDesno[i].BackColor = Color.DarkSlateBlue;
                     }
                 }
             }
         }
         private void frmIgra_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Up) pomeriGore2 = false;
-            if (e.KeyCode == Keys.Down) pomeriDole2 = false;
-            if (e.KeyCode == Keys.W) pomeriGore1 = false;
-            if (e.KeyCode == Keys.S) pomeriDole1 = false;
-            if (e.KeyCode == Keys.A) metakLevo = false;
-            if (e.KeyCode == Keys.Enter) metakDesno = false;
+            if (e.KeyCode == Keys.Up) pomeriGoreIgracDesno = false;
+            if (e.KeyCode == Keys.Down) pomeriDoleIgracDesno = false;
+            if (e.KeyCode == Keys.W) pomeriGoreIgracaLevo = false;
+            if (e.KeyCode == Keys.S) pomeriDoleIgracaLevo = false;
+            if (e.KeyCode == Keys.A) IspaljenMetakLevo = false;
+            if (e.KeyCode == Keys.Enter) IspaljenMetakDesno = false;
         }
     }
 }

@@ -35,23 +35,23 @@
             this.btnPodesavanja = new System.Windows.Forms.Button();
             this.btnUputstvo = new System.Windows.Forms.Button();
             this.btnNazad = new System.Windows.Forms.Button();
-            this.pBx1 = new System.Windows.Forms.PictureBox();
-            this.pBx2 = new System.Windows.Forms.PictureBox();
-            this.pBx3 = new System.Windows.Forms.PictureBox();
-            this.pBx4 = new System.Windows.Forms.PictureBox();
+            this.pBxAstronautIgrac1 = new System.Windows.Forms.PictureBox();
+            this.pBxVanzemaljacIgrac1 = new System.Windows.Forms.PictureBox();
+            this.pBxVanzemaljacIgrac2 = new System.Windows.Forms.PictureBox();
+            this.pBxAstronautIgrac2 = new System.Windows.Forms.PictureBox();
             this.lblIgrac1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.chcBx1 = new System.Windows.Forms.CheckBox();
-            this.chcBx2 = new System.Windows.Forms.CheckBox();
-            this.chcBx3 = new System.Windows.Forms.CheckBox();
-            this.chcBx4 = new System.Windows.Forms.CheckBox();
+            this.lblIgrac2 = new System.Windows.Forms.Label();
+            this.chcBxAstronautIgrac1 = new System.Windows.Forms.CheckBox();
+            this.chcBxVanzemaljacIgrac1 = new System.Windows.Forms.CheckBox();
+            this.chcBxAstronautIgrac2 = new System.Windows.Forms.CheckBox();
+            this.chcBxVanzemaljacIgrac2 = new System.Windows.Forms.CheckBox();
             this.btnIzlaz = new System.Windows.Forms.Button();
             this.rtbUputstvo = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBx1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBx2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBx3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBx4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxAstronautIgrac1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxVanzemaljacIgrac1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxVanzemaljacIgrac2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxAstronautIgrac2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -107,7 +107,7 @@
             this.btnPodesavanja.TabIndex = 3;
             this.btnPodesavanja.Text = "PODEŠAVANJA";
             this.btnPodesavanja.UseVisualStyleBackColor = false;
-            this.btnPodesavanja.Click += new System.EventHandler(this.button3_Click);
+            this.btnPodesavanja.Click += new System.EventHandler(this.btnPodesavanja_Click);
             // 
             // btnUputstvo
             // 
@@ -136,49 +136,49 @@
             this.btnNazad.UseVisualStyleBackColor = true;
             this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
             // 
-            // pBx1
+            // pBxAstronautIgrac1
             // 
-            this.pBx1.BackColor = System.Drawing.Color.Transparent;
-            this.pBx1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
-            this.pBx1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBx1.Location = new System.Drawing.Point(263, 291);
-            this.pBx1.Name = "pBx1";
-            this.pBx1.Size = new System.Drawing.Size(124, 158);
-            this.pBx1.TabIndex = 7;
-            this.pBx1.TabStop = false;
+            this.pBxAstronautIgrac1.BackColor = System.Drawing.Color.Transparent;
+            this.pBxAstronautIgrac1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
+            this.pBxAstronautIgrac1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBxAstronautIgrac1.Location = new System.Drawing.Point(263, 291);
+            this.pBxAstronautIgrac1.Name = "pBxAstronautIgrac1";
+            this.pBxAstronautIgrac1.Size = new System.Drawing.Size(124, 158);
+            this.pBxAstronautIgrac1.TabIndex = 7;
+            this.pBxAstronautIgrac1.TabStop = false;
             // 
-            // pBx2
+            // pBxVanzemaljacIgrac1
             // 
-            this.pBx2.BackColor = System.Drawing.Color.Transparent;
-            this.pBx2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources.Vanzemaljac;
-            this.pBx2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBx2.Location = new System.Drawing.Point(441, 291);
-            this.pBx2.Name = "pBx2";
-            this.pBx2.Size = new System.Drawing.Size(124, 158);
-            this.pBx2.TabIndex = 8;
-            this.pBx2.TabStop = false;
+            this.pBxVanzemaljacIgrac1.BackColor = System.Drawing.Color.Transparent;
+            this.pBxVanzemaljacIgrac1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources.Vanzemaljac;
+            this.pBxVanzemaljacIgrac1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBxVanzemaljacIgrac1.Location = new System.Drawing.Point(441, 291);
+            this.pBxVanzemaljacIgrac1.Name = "pBxVanzemaljacIgrac1";
+            this.pBxVanzemaljacIgrac1.Size = new System.Drawing.Size(124, 158);
+            this.pBxVanzemaljacIgrac1.TabIndex = 8;
+            this.pBxVanzemaljacIgrac1.TabStop = false;
             // 
-            // pBx3
+            // pBxVanzemaljacIgrac2
             // 
-            this.pBx3.BackColor = System.Drawing.Color.Transparent;
-            this.pBx3.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources.Vanzemaljac;
-            this.pBx3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBx3.Location = new System.Drawing.Point(816, 291);
-            this.pBx3.Name = "pBx3";
-            this.pBx3.Size = new System.Drawing.Size(124, 158);
-            this.pBx3.TabIndex = 9;
-            this.pBx3.TabStop = false;
+            this.pBxVanzemaljacIgrac2.BackColor = System.Drawing.Color.Transparent;
+            this.pBxVanzemaljacIgrac2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources.Vanzemaljac;
+            this.pBxVanzemaljacIgrac2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBxVanzemaljacIgrac2.Location = new System.Drawing.Point(816, 291);
+            this.pBxVanzemaljacIgrac2.Name = "pBxVanzemaljacIgrac2";
+            this.pBxVanzemaljacIgrac2.Size = new System.Drawing.Size(124, 158);
+            this.pBxVanzemaljacIgrac2.TabIndex = 9;
+            this.pBxVanzemaljacIgrac2.TabStop = false;
             // 
-            // pBx4
+            // pBxAstronautIgrac2
             // 
-            this.pBx4.BackColor = System.Drawing.Color.Transparent;
-            this.pBx4.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
-            this.pBx4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBx4.Location = new System.Drawing.Point(633, 291);
-            this.pBx4.Name = "pBx4";
-            this.pBx4.Size = new System.Drawing.Size(124, 158);
-            this.pBx4.TabIndex = 10;
-            this.pBx4.TabStop = false;
+            this.pBxAstronautIgrac2.BackColor = System.Drawing.Color.Transparent;
+            this.pBxAstronautIgrac2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._734D8597_9FF9_493B_8F12_C9C45A1BFB5D;
+            this.pBxAstronautIgrac2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBxAstronautIgrac2.Location = new System.Drawing.Point(633, 291);
+            this.pBxAstronautIgrac2.Name = "pBxAstronautIgrac2";
+            this.pBxAstronautIgrac2.Size = new System.Drawing.Size(124, 158);
+            this.pBxAstronautIgrac2.TabIndex = 10;
+            this.pBxAstronautIgrac2.TabStop = false;
             // 
             // lblIgrac1
             // 
@@ -191,60 +191,60 @@
             this.lblIgrac1.TabIndex = 11;
             this.lblIgrac1.Text = "IGRAC 1";
             // 
-            // lbl2
+            // lblIgrac2
             // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.ForeColor = System.Drawing.Color.Black;
-            this.lbl2.Location = new System.Drawing.Point(735, 216);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(104, 39);
-            this.lbl2.TabIndex = 12;
-            this.lbl2.Text = "IGRAC 2";
+            this.lblIgrac2.AutoSize = true;
+            this.lblIgrac2.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIgrac2.ForeColor = System.Drawing.Color.Black;
+            this.lblIgrac2.Location = new System.Drawing.Point(735, 216);
+            this.lblIgrac2.Name = "lblIgrac2";
+            this.lblIgrac2.Size = new System.Drawing.Size(104, 39);
+            this.lblIgrac2.TabIndex = 12;
+            this.lblIgrac2.Text = "IGRAC 2";
             // 
-            // chcBx1
+            // chcBxAstronautIgrac1
             // 
-            this.chcBx1.AutoSize = true;
-            this.chcBx1.BackColor = System.Drawing.Color.Transparent;
-            this.chcBx1.Location = new System.Drawing.Point(263, 291);
-            this.chcBx1.Name = "chcBx1";
-            this.chcBx1.Size = new System.Drawing.Size(18, 17);
-            this.chcBx1.TabIndex = 13;
-            this.chcBx1.UseVisualStyleBackColor = false;
-            this.chcBx1.CheckedChanged += new System.EventHandler(this.chcBx1_CheckedChanged);
+            this.chcBxAstronautIgrac1.AutoSize = true;
+            this.chcBxAstronautIgrac1.BackColor = System.Drawing.Color.Transparent;
+            this.chcBxAstronautIgrac1.Location = new System.Drawing.Point(263, 291);
+            this.chcBxAstronautIgrac1.Name = "chcBxAstronautIgrac1";
+            this.chcBxAstronautIgrac1.Size = new System.Drawing.Size(18, 17);
+            this.chcBxAstronautIgrac1.TabIndex = 13;
+            this.chcBxAstronautIgrac1.UseVisualStyleBackColor = false;
+            this.chcBxAstronautIgrac1.CheckedChanged += new System.EventHandler(this.chcBx1_CheckedChanged);
             // 
-            // chcBx2
+            // chcBxVanzemaljacIgrac1
             // 
-            this.chcBx2.AutoSize = true;
-            this.chcBx2.BackColor = System.Drawing.Color.Transparent;
-            this.chcBx2.Location = new System.Drawing.Point(441, 291);
-            this.chcBx2.Name = "chcBx2";
-            this.chcBx2.Size = new System.Drawing.Size(18, 17);
-            this.chcBx2.TabIndex = 14;
-            this.chcBx2.UseVisualStyleBackColor = false;
-            this.chcBx2.CheckedChanged += new System.EventHandler(this.chcBx2_CheckedChanged);
+            this.chcBxVanzemaljacIgrac1.AutoSize = true;
+            this.chcBxVanzemaljacIgrac1.BackColor = System.Drawing.Color.Transparent;
+            this.chcBxVanzemaljacIgrac1.Location = new System.Drawing.Point(441, 291);
+            this.chcBxVanzemaljacIgrac1.Name = "chcBxVanzemaljacIgrac1";
+            this.chcBxVanzemaljacIgrac1.Size = new System.Drawing.Size(18, 17);
+            this.chcBxVanzemaljacIgrac1.TabIndex = 14;
+            this.chcBxVanzemaljacIgrac1.UseVisualStyleBackColor = false;
+            this.chcBxVanzemaljacIgrac1.CheckedChanged += new System.EventHandler(this.chcBx2_CheckedChanged);
             // 
-            // chcBx3
+            // chcBxAstronautIgrac2
             // 
-            this.chcBx3.AutoSize = true;
-            this.chcBx3.BackColor = System.Drawing.Color.Transparent;
-            this.chcBx3.Location = new System.Drawing.Point(633, 291);
-            this.chcBx3.Name = "chcBx3";
-            this.chcBx3.Size = new System.Drawing.Size(18, 17);
-            this.chcBx3.TabIndex = 15;
-            this.chcBx3.UseVisualStyleBackColor = false;
-            this.chcBx3.CheckedChanged += new System.EventHandler(this.chcBx3_CheckedChanged);
+            this.chcBxAstronautIgrac2.AutoSize = true;
+            this.chcBxAstronautIgrac2.BackColor = System.Drawing.Color.Transparent;
+            this.chcBxAstronautIgrac2.Location = new System.Drawing.Point(633, 291);
+            this.chcBxAstronautIgrac2.Name = "chcBxAstronautIgrac2";
+            this.chcBxAstronautIgrac2.Size = new System.Drawing.Size(18, 17);
+            this.chcBxAstronautIgrac2.TabIndex = 15;
+            this.chcBxAstronautIgrac2.UseVisualStyleBackColor = false;
+            this.chcBxAstronautIgrac2.CheckedChanged += new System.EventHandler(this.chcBx3_CheckedChanged);
             // 
-            // chcBx4
+            // chcBxVanzemaljacIgrac2
             // 
-            this.chcBx4.AutoSize = true;
-            this.chcBx4.BackColor = System.Drawing.Color.Transparent;
-            this.chcBx4.Location = new System.Drawing.Point(816, 291);
-            this.chcBx4.Name = "chcBx4";
-            this.chcBx4.Size = new System.Drawing.Size(18, 17);
-            this.chcBx4.TabIndex = 16;
-            this.chcBx4.UseVisualStyleBackColor = false;
-            this.chcBx4.CheckedChanged += new System.EventHandler(this.chcBx4_CheckedChanged);
+            this.chcBxVanzemaljacIgrac2.AutoSize = true;
+            this.chcBxVanzemaljacIgrac2.BackColor = System.Drawing.Color.Transparent;
+            this.chcBxVanzemaljacIgrac2.Location = new System.Drawing.Point(816, 291);
+            this.chcBxVanzemaljacIgrac2.Name = "chcBxVanzemaljacIgrac2";
+            this.chcBxVanzemaljacIgrac2.Size = new System.Drawing.Size(18, 17);
+            this.chcBxVanzemaljacIgrac2.TabIndex = 16;
+            this.chcBxVanzemaljacIgrac2.UseVisualStyleBackColor = false;
+            this.chcBxVanzemaljacIgrac2.CheckedChanged += new System.EventHandler(this.chcBx4_CheckedChanged);
             // 
             // btnIzlaz
             // 
@@ -263,7 +263,7 @@
             // 
             this.rtbUputstvo.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbUputstvo.ForeColor = System.Drawing.Color.Black;
-            this.rtbUputstvo.Location = new System.Drawing.Point(178, 493);
+            this.rtbUputstvo.Location = new System.Drawing.Point(241, 501);
             this.rtbUputstvo.Name = "rtbUputstvo";
             this.rtbUputstvo.ReadOnly = true;
             this.rtbUputstvo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
@@ -279,16 +279,16 @@
             this.ClientSize = new System.Drawing.Size(1180, 674);
             this.Controls.Add(this.rtbUputstvo);
             this.Controls.Add(this.btnIzlaz);
-            this.Controls.Add(this.chcBx4);
-            this.Controls.Add(this.chcBx3);
-            this.Controls.Add(this.chcBx2);
-            this.Controls.Add(this.chcBx1);
-            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.chcBxVanzemaljacIgrac2);
+            this.Controls.Add(this.chcBxAstronautIgrac2);
+            this.Controls.Add(this.chcBxVanzemaljacIgrac1);
+            this.Controls.Add(this.chcBxAstronautIgrac1);
+            this.Controls.Add(this.lblIgrac2);
             this.Controls.Add(this.lblIgrac1);
-            this.Controls.Add(this.pBx4);
-            this.Controls.Add(this.pBx3);
-            this.Controls.Add(this.pBx2);
-            this.Controls.Add(this.pBx1);
+            this.Controls.Add(this.pBxAstronautIgrac2);
+            this.Controls.Add(this.pBxVanzemaljacIgrac2);
+            this.Controls.Add(this.pBxVanzemaljacIgrac1);
+            this.Controls.Add(this.pBxAstronautIgrac1);
             this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.btnUputstvo);
             this.Controls.Add(this.btnPodesavanja);
@@ -302,10 +302,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxPozadina)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBx1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBx2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBx3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBx4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxAstronautIgrac1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxVanzemaljacIgrac1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxVanzemaljacIgrac2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxAstronautIgrac2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,16 +319,16 @@
         private System.Windows.Forms.Button btnPodesavanja;
         private System.Windows.Forms.Button btnUputstvo;
         private System.Windows.Forms.Button btnNazad;
-        private System.Windows.Forms.PictureBox pBx1;
-        private System.Windows.Forms.PictureBox pBx2;
-        private System.Windows.Forms.PictureBox pBx3;
-        private System.Windows.Forms.PictureBox pBx4;
+        private System.Windows.Forms.PictureBox pBxAstronautIgrac1;
+        private System.Windows.Forms.PictureBox pBxVanzemaljacIgrac1;
+        private System.Windows.Forms.PictureBox pBxVanzemaljacIgrac2;
+        private System.Windows.Forms.PictureBox pBxAstronautIgrac2;
         private System.Windows.Forms.Label lblIgrac1;
-        private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.CheckBox chcBx1;
-        private System.Windows.Forms.CheckBox chcBx2;
-        private System.Windows.Forms.CheckBox chcBx3;
-        private System.Windows.Forms.CheckBox chcBx4;
+        private System.Windows.Forms.Label lblIgrac2;
+        private System.Windows.Forms.CheckBox chcBxAstronautIgrac1;
+        private System.Windows.Forms.CheckBox chcBxVanzemaljacIgrac1;
+        private System.Windows.Forms.CheckBox chcBxAstronautIgrac2;
+        private System.Windows.Forms.CheckBox chcBxVanzemaljacIgrac2;
         private System.Windows.Forms.Button btnIzlaz;
         private System.Windows.Forms.RichTextBox rtbUputstvo;
     }
