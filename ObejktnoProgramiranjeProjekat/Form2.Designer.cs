@@ -57,8 +57,7 @@
             // 
             // pbxIgrac1
             // 
-            this.pbxIgrac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pbxIgrac1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.pbxIgrac1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pbxIgrac1.Location = new System.Drawing.Point(50, 250);
             this.pbxIgrac1.Name = "pbxIgrac1";
             this.pbxIgrac1.Size = new System.Drawing.Size(124, 158);
@@ -68,8 +67,7 @@
             // 
             // pbxIgrac2
             // 
-            this.pbxIgrac2.BackColor = System.Drawing.Color.Yellow;
-            this.pbxIgrac2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.pbxIgrac2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pbxIgrac2.Location = new System.Drawing.Point(950, 250);
             this.pbxIgrac2.Name = "pbxIgrac2";
             this.pbxIgrac2.Size = new System.Drawing.Size(124, 158);
@@ -130,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(1184, 678);
             this.Controls.Add(this.tbxPoeni2);
             this.Controls.Add(this.tbxPoeni1);
