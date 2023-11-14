@@ -17,6 +17,7 @@ namespace ObejktnoProgramiranjeProjekat
         {
             InitializeComponent();
         }
+        bool jesteSelektovan = false;
         private void Form1_Load(object sender, EventArgs e)
         {
             btnNazad.Hide();
@@ -31,6 +32,8 @@ namespace ObejktnoProgramiranjeProjekat
             chcBx2.Hide();
             chcBx3.Hide();
             chcBx4.Hide();
+            chcBx1.Checked = true;
+            chcBx4.Checked = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -39,6 +42,7 @@ namespace ObejktnoProgramiranjeProjekat
         }
         private void button3_Click(object sender, EventArgs e)
         {
+           
             btnStart.Hide();
             btnPodesavanja.Hide();
             btnUputstvo.Hide();
@@ -89,14 +93,17 @@ namespace ObejktnoProgramiranjeProjekat
         private void btnStart_Click(object sender, EventArgs e)
         {
             frmIgra form = new frmIgra();
+            if (jesteSelektovan) form.igrac1Slika = 1;
+            else form.igrac1Slika = 2;
             btnNazad.Show();
             btnPodesavanja.Hide();
             btnUputstvo.Hide();
             btnStart.Hide();
             btnIzlaz.Hide();
-            form.Show();
+            form.ShowDialog();
             form.Focus();
             this.Hide();
+           
         }
 
         private void chcBx1_CheckedChanged(object sender, EventArgs e)
@@ -104,7 +111,8 @@ namespace ObejktnoProgramiranjeProjekat
             if (chcBx1.Checked)
             {
                 chcBx3.Enabled = false;
-                chcBx2.Checked= false;
+                chcBx2.Checked = false;
+                jesteSelektovan = true;
             }
             else
             {
@@ -131,6 +139,7 @@ namespace ObejktnoProgramiranjeProjekat
             {
                 chcBx1.Enabled = false;
                 chcBx4.Checked= false;
+                jesteSelektovan=true;
             }
             else
             {

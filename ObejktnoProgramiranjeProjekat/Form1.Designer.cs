@@ -143,7 +143,7 @@
             this.pBx1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBx1.Location = new System.Drawing.Point(263, 291);
             this.pBx1.Name = "pBx1";
-            this.pBx1.Size = new System.Drawing.Size(141, 158);
+            this.pBx1.Size = new System.Drawing.Size(124, 158);
             this.pBx1.TabIndex = 7;
             this.pBx1.TabStop = false;
             // 
@@ -176,7 +176,7 @@
             this.pBx4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBx4.Location = new System.Drawing.Point(633, 291);
             this.pBx4.Name = "pBx4";
-            this.pBx4.Size = new System.Drawing.Size(145, 158);
+            this.pBx4.Size = new System.Drawing.Size(124, 158);
             this.pBx4.TabIndex = 10;
             this.pBx4.TabStop = false;
             // 
@@ -263,7 +263,7 @@
             // 
             this.rtbUputstvo.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbUputstvo.ForeColor = System.Drawing.Color.Black;
-            this.rtbUputstvo.Location = new System.Drawing.Point(310, 182);
+            this.rtbUputstvo.Location = new System.Drawing.Point(178, 493);
             this.rtbUputstvo.Name = "rtbUputstvo";
             this.rtbUputstvo.ReadOnly = true;
             this.rtbUputstvo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;

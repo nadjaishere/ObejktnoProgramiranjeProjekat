@@ -34,10 +34,10 @@
             this.pbxIgrac2 = new System.Windows.Forms.PictureBox();
             this.tmrNmp = new System.Windows.Forms.Timer(this.components);
             this.tmrMetkovi = new System.Windows.Forms.Timer(this.components);
-            this.pbxMetak1 = new System.Windows.Forms.PictureBox();
             this.btnIzlaz2 = new System.Windows.Forms.Button();
             this.tbxPoeni1 = new System.Windows.Forms.TextBox();
             this.tbxPoeni2 = new System.Windows.Forms.TextBox();
+            this.pbxMetak1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIgrac1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIgrac2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMetak1)).BeginInit();
@@ -58,18 +58,22 @@
             // pbxIgrac1
             // 
             this.pbxIgrac1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pbxIgrac1.Location = new System.Drawing.Point(78, 256);
+            this.pbxIgrac1.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.pbxIgrac1.Location = new System.Drawing.Point(50, 250);
             this.pbxIgrac1.Name = "pbxIgrac1";
-            this.pbxIgrac1.Size = new System.Drawing.Size(69, 63);
+            this.pbxIgrac1.Size = new System.Drawing.Size(124, 158);
+            this.pbxIgrac1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxIgrac1.TabIndex = 1;
             this.pbxIgrac1.TabStop = false;
             // 
             // pbxIgrac2
             // 
             this.pbxIgrac2.BackColor = System.Drawing.Color.Yellow;
-            this.pbxIgrac2.Location = new System.Drawing.Point(974, 256);
+            this.pbxIgrac2.BackgroundImage = global::ObejktnoProgramiranjeProjekat.Properties.Resources._9a2f1c6f026149450365f8a8d06ab9b81;
+            this.pbxIgrac2.Location = new System.Drawing.Point(950, 250);
             this.pbxIgrac2.Name = "pbxIgrac2";
-            this.pbxIgrac2.Size = new System.Drawing.Size(69, 63);
+            this.pbxIgrac2.Size = new System.Drawing.Size(124, 158);
+            this.pbxIgrac2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxIgrac2.TabIndex = 2;
             this.pbxIgrac2.TabStop = false;
             // 
@@ -83,15 +87,6 @@
             // 
             this.tmrMetkovi.Enabled = true;
             this.tmrMetkovi.Interval = 50;
-            // 
-            // pbxMetak1
-            // 
-            this.pbxMetak1.BackColor = System.Drawing.Color.White;
-            this.pbxMetak1.Location = new System.Drawing.Point(132, 285);
-            this.pbxMetak1.Name = "pbxMetak1";
-            this.pbxMetak1.Size = new System.Drawing.Size(15, 15);
-            this.pbxMetak1.TabIndex = 4;
-            this.pbxMetak1.TabStop = false;
             // 
             // btnIzlaz2
             // 
@@ -121,6 +116,15 @@
             this.tbxPoeni2.ReadOnly = true;
             this.tbxPoeni2.Size = new System.Drawing.Size(107, 22);
             this.tbxPoeni2.TabIndex = 7;
+            // 
+            // pbxMetak1
+            // 
+            this.pbxMetak1.BackColor = System.Drawing.Color.White;
+            this.pbxMetak1.Location = new System.Drawing.Point(138, 328);
+            this.pbxMetak1.Name = "pbxMetak1";
+            this.pbxMetak1.Size = new System.Drawing.Size(15, 15);
+            this.pbxMetak1.TabIndex = 4;
+            this.pbxMetak1.TabStop = false;
             // 
             // frmIgra
             // 
@@ -155,9 +159,9 @@
         private System.Windows.Forms.PictureBox pbxIgrac2;
         private System.Windows.Forms.Timer tmrNmp;
         private System.Windows.Forms.Timer tmrMetkovi;
-        private System.Windows.Forms.PictureBox pbxMetak1;
         private System.Windows.Forms.Button btnIzlaz2;
         private System.Windows.Forms.TextBox tbxPoeni1;
         private System.Windows.Forms.TextBox tbxPoeni2;
+        private System.Windows.Forms.PictureBox pbxMetak1;
     }
 }
